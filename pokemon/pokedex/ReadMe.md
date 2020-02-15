@@ -7,8 +7,8 @@ Please try to go off the official [Pokemon Website's Pokedex](https://www.pokemo
 
 Once you've submitted an update to the file we will review it and if approved it will be added.
 
-# Why are you allowing Community Contributions?
+## Why are you allowing Community Contributions?
 The database is hard to update with just a few people so we've opened it up to everyone.
 
-# Contributors
+## Contributors
 [Lockyz](https://github.com/lockyz)
