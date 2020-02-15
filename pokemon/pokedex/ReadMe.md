@@ -12,3 +12,6 @@ The database is hard to update with just a few people so we've opened it up to e
 We wish, Nintendo generally doesn't allow community creations like this.
 
 We are also not licensed, endorsed, or supported by Nintendo at all.
+
+# Contributors
+[Lockyz](https://github.com/lockyz)
