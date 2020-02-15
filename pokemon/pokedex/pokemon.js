@@ -3683,6 +3683,51 @@ var pokemon = [
       _nb:721,_engName:"Volcanion",_frName:"Volcanion",_type:"Fire",_type2:"Water",_expGiven:3,_catchRate:3,_male:2,
       _baseStats: {_total:600,_hp:80, _atk:110, _def:120, _sAtk:130, _sDef:90, _spd:70},
       _description: "This Description has not been added yet. You can help us update it [here](https://github.com/lockyz/database/blob/master/pokemon/pokemon.js)"
+    },
+    {
+      _nb:722,_engName:"Rowlet",_type:"Grass",_type2:"Flying",_expGiven:3,_catchRate:3,_male:2,
+      _baseStats: {_total:320,_hp:68, _atk:55, _def:55, _sAtk:50, _sDef:50, _spd:42},
+      _description: "This wary Pokémon uses photosynthesis to store up energy during the day, while becoming active at night."
+    },
+    {
+      _nb:723,_engName:"Dartrix",_type:"Grass",_type2:"Flying",_expGiven:3,_catchRate:3,_male:2,
+      _baseStats: {_total:420,_hp:78, _atk:75, _def:75, _sAtk:70, _sDef:70, _spd:52},
+      _description: "A bit of a dandy, it spends its free time preening its wings. Its preoccupation with any dirt on its plumage can leave it unable to battle."
+    },
+    {
+      _nb:724,_engName:"Decidueye",_type:"Grass",_type2:"Ghost",_expGiven:3,_catchRate:3,_male:2,
+      _baseStats: {_total:530,_hp:78, _atk:107, _def:75, _sAtk:100, _sDef:100, _spd:70},
+      _description: "It fires arrow quills from its wings with such precision, they can pierce a pebble at distances over a hundred yards."
+    },
+    {
+      _nb:725,_engName:"Litten",_type:"Fire",_type2:"",_expGiven:3,_catchRate:3,_male:2,
+      _baseStats: {_total:320,_hp:45, _atk:65, _def:40, _sAtk:60, _sDef:40, _spd:70},
+      _description: "While grooming itself, it builds up fur inside its stomach. It sets the fur alight and spews fiery attacks, which change based on how it coughs."
+    },
+    {
+      _nb:726,_engName:"Torracat",_type:"Fire",_type2:"",_expGiven:3,_catchRate:3,_male:2,
+      _baseStats: {_total:420,_hp:65, _atk:85, _def:50, _sAtk:80, _sDef:50, _spd:90},
+      _description: "At its throat, it bears a bell of fire. The bell rings brightly whenever this Pokémon spits fire."
+    },
+    {
+      _nb:727,_engName:"Incineroar",_type:"Fire",_type2:"Dark",_expGiven:3,_catchRate:3,_male:2,
+      _baseStats: {_total:530,_hp:95, _atk:115, _def:90, _sAtk:80, _sDef:90, _spd:60},
+      _description: "This Pokémon has a violent, selfish disposition. If it's not in the mood to listen, it will ignore its Trainer's orders with complete nonchalance."
+    },
+    {
+      _nb:728,_engName:"Popplio",_type:"Water",_type2:"",_expGiven:3,_catchRate:3,_male:2,
+      _baseStats: {_total:320,_hp:50, _atk:54, _def:54, _sAtk:66, _sDef:56, _spd:40},
+      _description: "This Pokémon snorts body fluids from its nose, blowing balloons to smash into its foes. It's famous for being a hard worker."
+    },
+    {
+      _nb:729,_engName:"Brionne",_type:"Water",_type2:"",_expGiven:3,_catchRate:3,_male:2,
+      _baseStats: {_total:420,_hp:60, _atk:69, _def:69, _sAtk:91, _sDef:81, _spd:50},
+      _description: "A skillful dancer, it creates a sequence of water balloons as it dances, and briskly bombards its enemies."
+    },
+    {
+      _nb:730,_engName:"Primarina",_type:"Water",_type2:"Fairy",_expGiven:3,_catchRate:3,_male:2,
+      _baseStats: {_total:530,_hp:80, _atk:74, _def:74, _sAtk:126, _sDef:116, _spd:60},
+      _description: "It controls its water balloons with song. The melody is learned from others of its kind and is passed down from one generation to the next."
     }
 ];
 module.exports = pokemon;
