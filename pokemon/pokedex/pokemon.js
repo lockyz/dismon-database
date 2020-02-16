@@ -1,65 +1,49 @@
 var pokemon = [
   /*
-  THIS DATABASE VERSION WILL NOT WORK UNTIL IT IS FULLY FIXED, IT'S JUST BEING ADDED SO PEOPLE KNOW WHAT IMMA DOING
+  Dismon Database 1.0
       EXAMPLE POKEMON
   {
       num: 123,
       species: "Name",
       types: ["Type 1", "Type 2"],
-      genderRatio: {M: 0.123, F: 0.123},
       baseStats: {hp: 12, atk: 12, def: 12, spa: 123, spd: 12, spe: 123},
-      abilities: {0: "Ability 1", 1: "Ability 2 or None" H: "Hidden Ability"},
+      abilities: {0: "Ability 1", 1: "Ability 2 or None" H: "Hidden Ability or None"},
       otherFormes: ["Form 1", "Form 2"],
       description: "DESCRIPTION"
     },
-        NOT ALL MONS ARE USING THIS TEMPLATE HOWEVER THEY WILL IN THE FUTURE,
-        ANY MONS WITH THE NAME BEFORE THE { NEEDS TO BE EDITED.
         ANY INFORMATION THAT IS INCORRECT NEEDS TO BE CHANGED.
         DESCRIPTIONS CAN ONLY BE ONE LINE. SEPERATE LINES WITH \n
+        Some Mons have extra data. This will be fixed in the future.
+        Some Mons don't have all required data meaning that doing the command will trigger a few "undefined" Messages to appear. This is gonna be fixed.
+        Form names need to be changed to use spaces instead of -
 
     */
     {
       num: 1,
       species: "Bulbasaur",
       types: ["Grass", "Poison"],
-      genderRatio: {M: 0.875, F: 0.125},
       baseStats: {hp: 45, atk: 49, def: 49, spa: 65, spd: 65, spe: 45},
-      abilities: {0: "Overgrow", H: "Chlorophyll"},
-      heightm: 0.7,
-      weightkg: 6.9,
-      color: "Green",
-      evos: ["ivysaur"],
-      eggGroups: ["Monster", "Grass"],
+      abilities: {0: "Overgrow", 1: "None", H: "Chlorophyll"},
+      otherFormes: ["None"],
+      description: "DESCRIPTION"
     },
     {
       num: 2,
       species: "Ivysaur",
       types: ["Grass", "Poison"],
-      genderRatio: {M: 0.875, F: 0.125},
       baseStats: {hp: 60, atk: 62, def: 63, spa: 80, spd: 80, spe: 60},
-      abilities: {0: "Overgrow", H: "Chlorophyll"},
-      heightm: 1,
-      weightkg: 13,
-      color: "Green",
-      prevo: "bulbasaur",
-      evoLevel: 16,
-      evos: ["venusaur"],
-      eggGroups: ["Monster", "Grass"],
+      abilities: {0: "Overgrow", 1: "None", H: "Chlorophyll"},
+      otherFormes: ["None"],
+      description: "DESCRIPTION"
     },
     {
       num: 3,
       species: "Venusaur",
       types: ["Grass", "Poison"],
-      genderRatio: {M: 0.875, F: 0.125},
       baseStats: {hp: 80, atk: 82, def: 83, spa: 100, spd: 100, spe: 80},
       abilities: {0: "Overgrow", H: "Chlorophyll"},
-      heightm: 2,
-      weightkg: 100,
-      color: "Green",
-      prevo: "ivysaur",
-      evoLevel: 32,
-      eggGroups: ["Monster", "Grass"],
       otherFormes: ["venusaurmega"],
+      description: "DESCRIPTION"
     },
     {
       num: 3,
@@ -106,6 +90,7 @@ var pokemon = [
     {
       num: 6,
       species: "Charizard",
+      image: "charizard",
       types: ["Fire", "Flying"],
       genderRatio: {M: 0.875, F: 0.125},
       baseStats: {hp: 78, atk: 84, def: 78, spa: 109, spd: 85, spe: 100},
@@ -8487,7 +8472,7 @@ var pokemon = [
       eggGroups: ["Undiscovered"],
       inheritsFrom: "arceus",
     },
-    victini: {
+    {
       num: 494,
       species: "Victini",
       types: ["Psychic", "Fire"],
@@ -8499,7 +8484,7 @@ var pokemon = [
       color: "Yellow",
       eggGroups: ["Undiscovered"],
     },
-    snivy: {
+    {
       num: 495,
       species: "Snivy",
       types: ["Grass"],
@@ -8512,7 +8497,7 @@ var pokemon = [
       evos: ["servine"],
       eggGroups: ["Field", "Grass"],
     },
-    servine: {
+    {
       num: 496,
       species: "Servine",
       types: ["Grass"],
@@ -8527,7 +8512,7 @@ var pokemon = [
       evos: ["serperior"],
       eggGroups: ["Field", "Grass"],
     },
-    serperior: {
+    {
       num: 497,
       species: "Serperior",
       types: ["Grass"],
@@ -8541,7 +8526,7 @@ var pokemon = [
       evoLevel: 36,
       eggGroups: ["Field", "Grass"],
     },
-    tepig: {
+    {
       num: 498,
       species: "Tepig",
       types: ["Fire"],
@@ -8554,7 +8539,7 @@ var pokemon = [
       evos: ["pignite"],
       eggGroups: ["Field"],
     },
-    pignite: {
+    {
       num: 499,
       species: "Pignite",
       types: ["Fire", "Fighting"],
@@ -8569,7 +8554,7 @@ var pokemon = [
       evos: ["emboar"],
       eggGroups: ["Field"],
     },
-    emboar: {
+    {
       num: 500,
       species: "Emboar",
       types: ["Fire", "Fighting"],
@@ -8583,7 +8568,7 @@ var pokemon = [
       evoLevel: 36,
       eggGroups: ["Field"],
     },
-    oshawott: {
+    {
       num: 501,
       species: "Oshawott",
       types: ["Water"],
@@ -8596,7 +8581,7 @@ var pokemon = [
       evos: ["dewott"],
       eggGroups: ["Field"],
     },
-    dewott: {
+    {
       num: 502,
       species: "Dewott",
       types: ["Water"],
@@ -8611,7 +8596,7 @@ var pokemon = [
       evos: ["samurott"],
       eggGroups: ["Field"],
     },
-    samurott: {
+    {
       num: 503,
       species: "Samurott",
       types: ["Water"],
@@ -8625,7 +8610,7 @@ var pokemon = [
       evoLevel: 36,
       eggGroups: ["Field"],
     },
-    patrat: {
+    {
       num: 504,
       species: "Patrat",
       types: ["Normal"],
@@ -8637,7 +8622,7 @@ var pokemon = [
       evos: ["watchog"],
       eggGroups: ["Field"],
     },
-    watchog: {
+    {
       num: 505,
       species: "Watchog",
       types: ["Normal"],
@@ -8650,7 +8635,7 @@ var pokemon = [
       evoLevel: 20,
       eggGroups: ["Field"],
     },
-    lillipup: {
+    {
       num: 506,
       species: "Lillipup",
       types: ["Normal"],
@@ -8662,7 +8647,7 @@ var pokemon = [
       evos: ["herdier"],
       eggGroups: ["Field"],
     },
-    herdier: {
+    {
       num: 507,
       species: "Herdier",
       types: ["Normal"],
@@ -8676,7 +8661,7 @@ var pokemon = [
       evos: ["stoutland"],
       eggGroups: ["Field"],
     },
-    stoutland: {
+    {
       num: 508,
       species: "Stoutland",
       types: ["Normal"],
@@ -8689,7 +8674,7 @@ var pokemon = [
       evoLevel: 32,
       eggGroups: ["Field"],
     },
-    purrloin: {
+    {
       num: 509,
       species: "Purrloin",
       types: ["Dark"],
@@ -8701,7 +8686,7 @@ var pokemon = [
       evos: ["liepard"],
       eggGroups: ["Field"],
     },
-    liepard: {
+    {
       num: 510,
       species: "Liepard",
       types: ["Dark"],
@@ -8714,7 +8699,7 @@ var pokemon = [
       evoLevel: 20,
       eggGroups: ["Field"],
     },
-    pansage: {
+    {
       num: 511,
       species: "Pansage",
       types: ["Grass"],
@@ -8727,7 +8712,7 @@ var pokemon = [
       evos: ["simisage"],
       eggGroups: ["Field"],
     },
-    simisage: {
+    {
       num: 512,
       species: "Simisage",
       types: ["Grass"],
@@ -8742,7 +8727,7 @@ var pokemon = [
       evoItem: "Leaf Stone",
       eggGroups: ["Field"],
     },
-    pansear: {
+    {
       num: 513,
       species: "Pansear",
       types: ["Fire"],
@@ -8755,7 +8740,7 @@ var pokemon = [
       evos: ["simisear"],
       eggGroups: ["Field"],
     },
-    simisear: {
+    {
       num: 514,
       species: "Simisear",
       types: ["Fire"],
@@ -8770,7 +8755,7 @@ var pokemon = [
       evoItem: "Fire Stone",
       eggGroups: ["Field"],
     },
-    panpour: {
+    {
       num: 515,
       species: "Panpour",
       types: ["Water"],
@@ -8783,7 +8768,7 @@ var pokemon = [
       evos: ["simipour"],
       eggGroups: ["Field"],
     },
-    simipour: {
+    {
       num: 516,
       species: "Simipour",
       types: ["Water"],
@@ -8798,7 +8783,7 @@ var pokemon = [
       evoItem: "Water Stone",
       eggGroups: ["Field"],
     },
-    munna: {
+    {
       num: 517,
       species: "Munna",
       types: ["Psychic"],
@@ -8810,7 +8795,7 @@ var pokemon = [
       evos: ["musharna"],
       eggGroups: ["Field"],
     },
-    musharna: {
+    {
       num: 518,
       species: "Musharna",
       types: ["Psychic"],
@@ -8824,7 +8809,7 @@ var pokemon = [
       evoItem: "Moon Stone",
       eggGroups: ["Field"],
     },
-    pidove: {
+    {
       num: 519,
       species: "Pidove",
       types: ["Normal", "Flying"],
@@ -8836,7 +8821,7 @@ var pokemon = [
       evos: ["tranquill"],
       eggGroups: ["Flying"],
     },
-    tranquill: {
+    {
       num: 520,
       species: "Tranquill",
       types: ["Normal", "Flying"],
@@ -8850,7 +8835,7 @@ var pokemon = [
       evos: ["unfezant"],
       eggGroups: ["Flying"],
     },
-    unfezant: {
+    {
       num: 521,
       species: "Unfezant",
       types: ["Normal", "Flying"],
@@ -8863,7 +8848,7 @@ var pokemon = [
       evoLevel: 32,
       eggGroups: ["Flying"],
     },
-    blitzle: {
+    {
       num: 522,
       species: "Blitzle",
       types: ["Electric"],
@@ -8875,7 +8860,7 @@ var pokemon = [
       evos: ["zebstrika"],
       eggGroups: ["Field"],
     },
-    zebstrika: {
+    {
       num: 523,
       species: "Zebstrika",
       types: ["Electric"],
@@ -8888,7 +8873,7 @@ var pokemon = [
       evoLevel: 27,
       eggGroups: ["Field"],
     },
-    roggenrola: {
+    {
       num: 524,
       species: "Roggenrola",
       types: ["Rock"],
@@ -8900,7 +8885,7 @@ var pokemon = [
       evos: ["boldore"],
       eggGroups: ["Mineral"],
     },
-    boldore: {
+    {
       num: 525,
       species: "Boldore",
       types: ["Rock"],
@@ -8914,7 +8899,7 @@ var pokemon = [
       evos: ["gigalith"],
       eggGroups: ["Mineral"],
     },
-    gigalith: {
+    {
       num: 526,
       species: "Gigalith",
       types: ["Rock"],
@@ -8927,7 +8912,7 @@ var pokemon = [
       evoType: "trade",
       eggGroups: ["Mineral"],
     },
-    woobat: {
+    {
       num: 527,
       species: "Woobat",
       types: ["Psychic", "Flying"],
@@ -8939,7 +8924,7 @@ var pokemon = [
       evos: ["swoobat"],
       eggGroups: ["Flying", "Field"],
     },
-    swoobat: {
+    {
       num: 528,
       species: "Swoobat",
       types: ["Psychic", "Flying"],
@@ -8952,7 +8937,7 @@ var pokemon = [
       evoType: "levelFriendship",
       eggGroups: ["Flying", "Field"],
     },
-    drilbur: {
+    {
       num: 529,
       species: "Drilbur",
       types: ["Ground"],
@@ -8964,7 +8949,7 @@ var pokemon = [
       evos: ["excadrill"],
       eggGroups: ["Field"],
     },
-    excadrill: {
+    {
       num: 530,
       species: "Excadrill",
       types: ["Ground", "Steel"],
@@ -8977,7 +8962,7 @@ var pokemon = [
       evoLevel: 31,
       eggGroups: ["Field"],
     },
-    audino: {
+    {
       num: 531,
       species: "Audino",
       types: ["Normal"],
@@ -8989,7 +8974,7 @@ var pokemon = [
       eggGroups: ["Fairy"],
       otherFormes: ["audinomega"],
     },
-    audinomega: {
+    {
       num: 531,
       species: "Audino-Mega",
       baseSpecies: "Audino",
@@ -9002,7 +8987,7 @@ var pokemon = [
       color: "White",
       eggGroups: ["Fairy"],
     },
-    timburr: {
+    {
       num: 532,
       species: "Timburr",
       types: ["Fighting"],
@@ -9015,7 +9000,7 @@ var pokemon = [
       evos: ["gurdurr"],
       eggGroups: ["Human-Like"],
     },
-    gurdurr: {
+    {
       num: 533,
       species: "Gurdurr",
       types: ["Fighting"],
@@ -9030,7 +9015,7 @@ var pokemon = [
       evos: ["conkeldurr"],
       eggGroups: ["Human-Like"],
     },
-    conkeldurr: {
+    {
       num: 534,
       species: "Conkeldurr",
       types: ["Fighting"],
@@ -9044,7 +9029,7 @@ var pokemon = [
       evoType: "trade",
       eggGroups: ["Human-Like"],
     },
-    tympole: {
+    {
       num: 535,
       species: "Tympole",
       types: ["Water"],
@@ -9056,7 +9041,7 @@ var pokemon = [
       evos: ["palpitoad"],
       eggGroups: ["Water 1"],
     },
-    palpitoad: {
+    {
       num: 536,
       species: "Palpitoad",
       types: ["Water", "Ground"],
@@ -9070,7 +9055,7 @@ var pokemon = [
       evos: ["seismitoad"],
       eggGroups: ["Water 1"],
     },
-    seismitoad: {
+    {
       num: 537,
       species: "Seismitoad",
       types: ["Water", "Ground"],
@@ -9083,7 +9068,7 @@ var pokemon = [
       evoLevel: 36,
       eggGroups: ["Water 1"],
     },
-    throh: {
+    {
       num: 538,
       species: "Throh",
       types: ["Fighting"],
@@ -9095,7 +9080,7 @@ var pokemon = [
       color: "Red",
       eggGroups: ["Human-Like"],
     },
-    sawk: {
+    {
       num: 539,
       species: "Sawk",
       types: ["Fighting"],
@@ -9107,7 +9092,7 @@ var pokemon = [
       color: "Blue",
       eggGroups: ["Human-Like"],
     },
-    sewaddle: {
+    {
       num: 540,
       species: "Sewaddle",
       types: ["Bug", "Grass"],
@@ -9119,7 +9104,7 @@ var pokemon = [
       evos: ["swadloon"],
       eggGroups: ["Bug"],
     },
-    swadloon: {
+    {
       num: 541,
       species: "Swadloon",
       types: ["Bug", "Grass"],
@@ -9133,7 +9118,7 @@ var pokemon = [
       evos: ["leavanny"],
       eggGroups: ["Bug"],
     },
-    leavanny: {
+    {
       num: 542,
       species: "Leavanny",
       types: ["Bug", "Grass"],
@@ -9146,7 +9131,7 @@ var pokemon = [
       evoType: "levelFriendship",
       eggGroups: ["Bug"],
     },
-    venipede: {
+    {
       num: 543,
       species: "Venipede",
       types: ["Bug", "Poison"],
@@ -9158,7 +9143,7 @@ var pokemon = [
       evos: ["whirlipede"],
       eggGroups: ["Bug"],
     },
-    whirlipede: {
+    {
       num: 544,
       species: "Whirlipede",
       types: ["Bug", "Poison"],
@@ -9172,7 +9157,7 @@ var pokemon = [
       evos: ["scolipede"],
       eggGroups: ["Bug"],
     },
-    scolipede: {
+    {
       num: 545,
       species: "Scolipede",
       types: ["Bug", "Poison"],
@@ -9185,7 +9170,7 @@ var pokemon = [
       evoLevel: 30,
       eggGroups: ["Bug"],
     },
-    cottonee: {
+    {
       num: 546,
       species: "Cottonee",
       types: ["Grass", "Fairy"],
@@ -9197,7 +9182,7 @@ var pokemon = [
       evos: ["whimsicott"],
       eggGroups: ["Fairy", "Grass"],
     },
-    whimsicott: {
+    {
       num: 547,
       species: "Whimsicott",
       types: ["Grass", "Fairy"],
@@ -9211,7 +9196,7 @@ var pokemon = [
       evoItem: "Sun Stone",
       eggGroups: ["Fairy", "Grass"],
     },
-    petilil: {
+    {
       num: 548,
       species: "Petilil",
       types: ["Grass"],
@@ -9224,7 +9209,7 @@ var pokemon = [
       evos: ["lilligant"],
       eggGroups: ["Grass"],
     },
-    lilligant: {
+    {
       num: 549,
       species: "Lilligant",
       types: ["Grass"],
@@ -9239,7 +9224,7 @@ var pokemon = [
       evoItem: "Sun Stone",
       eggGroups: ["Grass"],
     },
-    basculin: {
+    {
       num: 550,
       species: "Basculin",
       baseForme: "Red-Striped",
@@ -9252,7 +9237,7 @@ var pokemon = [
       eggGroups: ["Water 2"],
       otherFormes: ["basculinbluestriped"],
     },
-    basculinbluestriped: {
+    {
       num: 550,
       species: "Basculin-Blue-Striped",
       baseSpecies: "Basculin",
@@ -9266,7 +9251,7 @@ var pokemon = [
       eggGroups: ["Water 2"],
       inheritsFrom: "basculin",
     },
-    sandile: {
+    {
       num: 551,
       species: "Sandile",
       types: ["Ground", "Dark"],
@@ -9278,7 +9263,7 @@ var pokemon = [
       evos: ["krokorok"],
       eggGroups: ["Field"],
     },
-    krokorok: {
+    {
       num: 552,
       species: "Krokorok",
       types: ["Ground", "Dark"],
@@ -9292,7 +9277,7 @@ var pokemon = [
       evos: ["krookodile"],
       eggGroups: ["Field"],
     },
-    krookodile: {
+    {
       num: 553,
       species: "Krookodile",
       types: ["Ground", "Dark"],
@@ -9305,7 +9290,7 @@ var pokemon = [
       evoLevel: 40,
       eggGroups: ["Field"],
     },
-    darumaka: {
+    {
       num: 554,
       species: "Darumaka",
       types: ["Fire"],
@@ -9318,7 +9303,7 @@ var pokemon = [
       eggGroups: ["Field"],
       otherFormes: ["darumakagalar"],
     },
-    darumakagalar: {
+    {
       num: 554,
       species: "Darumaka-Galar",
       baseSpecies: "Darumaka",
@@ -9332,7 +9317,7 @@ var pokemon = [
       evos: ["darmanitangalar"],
       eggGroups: ["Field"],
     },
-    darmanitan: {
+    {
       num: 555,
       species: "Darmanitan",
       baseForme: "Standard",
@@ -9347,7 +9332,7 @@ var pokemon = [
       eggGroups: ["Field"],
       otherFormes: ["darmanitanzen", "darmanitangalar", "darmanitangalarzen"],
     },
-    darmanitanzen: {
+    {
       num: 555,
       species: "Darmanitan-Zen",
       baseSpecies: "Darmanitan",
@@ -9363,7 +9348,7 @@ var pokemon = [
       eggGroups: ["Field"],
       inheritsFrom: "darmanitan",
     },
-    darmanitangalar: {
+    {
       num: 555,
       species: "Darmanitan-Galar",
       baseSpecies: "Darmanitan",
@@ -9379,7 +9364,7 @@ var pokemon = [
       evoItem: "Ice Stone",
       eggGroups: ["Field"],
     },
-    darmanitangalarzen: {
+    {
       num: 555,
       species: "Darmanitan-Galar-Zen",
       baseSpecies: "Darmanitan",
@@ -9396,7 +9381,7 @@ var pokemon = [
       eggGroups: ["Field"],
       inheritsFrom: "darmanitangalar",
     },
-    maractus: {
+    {
       num: 556,
       species: "Maractus",
       types: ["Grass"],
@@ -9407,7 +9392,7 @@ var pokemon = [
       color: "Green",
       eggGroups: ["Grass"],
     },
-    dwebble: {
+    {
       num: 557,
       species: "Dwebble",
       types: ["Bug", "Rock"],
@@ -9419,7 +9404,7 @@ var pokemon = [
       evos: ["crustle"],
       eggGroups: ["Bug", "Mineral"],
     },
-    crustle: {
+    {
       num: 558,
       species: "Crustle",
       types: ["Bug", "Rock"],
@@ -9432,7 +9417,7 @@ var pokemon = [
       evoLevel: 34,
       eggGroups: ["Bug", "Mineral"],
     },
-    scraggy: {
+    {
       num: 559,
       species: "Scraggy",
       types: ["Dark", "Fighting"],
@@ -9444,7 +9429,7 @@ var pokemon = [
       evos: ["scrafty"],
       eggGroups: ["Field", "Dragon"],
     },
-    scrafty: {
+    {
       num: 560,
       species: "Scrafty",
       types: ["Dark", "Fighting"],
@@ -9457,7 +9442,7 @@ var pokemon = [
       evoLevel: 39,
       eggGroups: ["Field", "Dragon"],
     },
-    sigilyph: {
+    {
       num: 561,
       species: "Sigilyph",
       types: ["Psychic", "Flying"],
@@ -9468,7 +9453,7 @@ var pokemon = [
       color: "Black",
       eggGroups: ["Flying"],
     },
-    yamask: {
+    {
       num: 562,
       species: "Yamask",
       types: ["Ghost"],
@@ -9481,7 +9466,7 @@ var pokemon = [
       eggGroups: ["Mineral", "Amorphous"],
       otherFormes: ["yamaskgalar"],
     },
-    yamaskgalar: {
+    {
       num: 562,
       species: "Yamask-Galar",
       baseSpecies: "Yamask",
@@ -9495,7 +9480,7 @@ var pokemon = [
       evos: ["runerigus"],
       eggGroups: ["Mineral", "Amorphous"],
     },
-    cofagrigus: {
+    {
       num: 563,
       species: "Cofagrigus",
       types: ["Ghost"],
@@ -9508,7 +9493,7 @@ var pokemon = [
       evoLevel: 34,
       eggGroups: ["Mineral", "Amorphous"],
     },
-    tirtouga: {
+    {
       num: 564,
       species: "Tirtouga",
       types: ["Water", "Rock"],
@@ -9521,7 +9506,7 @@ var pokemon = [
       evos: ["carracosta"],
       eggGroups: ["Water 1", "Water 3"],
     },
-    carracosta: {
+    {
       num: 565,
       species: "Carracosta",
       types: ["Water", "Rock"],
@@ -9535,7 +9520,7 @@ var pokemon = [
       evoLevel: 37,
       eggGroups: ["Water 1", "Water 3"],
     },
-    archen: {
+    {
       num: 566,
       species: "Archen",
       types: ["Rock", "Flying"],
@@ -9548,7 +9533,7 @@ var pokemon = [
       evos: ["archeops"],
       eggGroups: ["Flying", "Water 3"],
     },
-    archeops: {
+    {
       num: 567,
       species: "Archeops",
       types: ["Rock", "Flying"],
@@ -9562,7 +9547,7 @@ var pokemon = [
       evoLevel: 37,
       eggGroups: ["Flying", "Water 3"],
     },
-    trubbish: {
+    {
       num: 568,
       species: "Trubbish",
       types: ["Poison"],
@@ -9574,7 +9559,7 @@ var pokemon = [
       evos: ["garbodor"],
       eggGroups: ["Mineral"],
     },
-    garbodor: {
+    {
       num: 569,
       species: "Garbodor",
       types: ["Poison"],
@@ -9588,7 +9573,7 @@ var pokemon = [
       eggGroups: ["Mineral"],
       otherFormes: ["garbodorgmax"],
     },
-    garbodorgmax: {
+    {
       num: 569,
       species: "Garbodor-Gmax",
       baseSpecies: "Garbodor",
@@ -9603,7 +9588,7 @@ var pokemon = [
       eggGroups: ["Mineral"],
       inheritsFrom: "garbodor",
     },
-    zorua: {
+    {
       num: 570,
       species: "Zorua",
       types: ["Dark"],
@@ -9616,7 +9601,7 @@ var pokemon = [
       evos: ["zoroark"],
       eggGroups: ["Field"],
     },
-    zoroark: {
+    {
       num: 571,
       species: "Zoroark",
       types: ["Dark"],
@@ -9630,7 +9615,7 @@ var pokemon = [
       evoLevel: 30,
       eggGroups: ["Field"],
     },
-    minccino: {
+    {
       num: 572,
       species: "Minccino",
       types: ["Normal"],
@@ -9643,7 +9628,7 @@ var pokemon = [
       evos: ["cinccino"],
       eggGroups: ["Field"],
     },
-    cinccino: {
+    {
       num: 573,
       species: "Cinccino",
       types: ["Normal"],
@@ -9658,7 +9643,7 @@ var pokemon = [
       evoItem: "Shiny Stone",
       eggGroups: ["Field"],
     },
-    gothita: {
+    {
       num: 574,
       species: "Gothita",
       types: ["Psychic"],
@@ -9671,7 +9656,7 @@ var pokemon = [
       evos: ["gothorita"],
       eggGroups: ["Human-Like"],
     },
-    gothorita: {
+    {
       num: 575,
       species: "Gothorita",
       types: ["Psychic"],
@@ -9686,7 +9671,7 @@ var pokemon = [
       evos: ["gothitelle"],
       eggGroups: ["Human-Like"],
     },
-    gothitelle: {
+    {
       num: 576,
       species: "Gothitelle",
       types: ["Psychic"],
@@ -9700,7 +9685,7 @@ var pokemon = [
       evoLevel: 41,
       eggGroups: ["Human-Like"],
     },
-    solosis: {
+    {
       num: 577,
       species: "Solosis",
       types: ["Psychic"],
@@ -9712,7 +9697,7 @@ var pokemon = [
       evos: ["duosion"],
       eggGroups: ["Amorphous"],
     },
-    duosion: {
+    {
       num: 578,
       species: "Duosion",
       types: ["Psychic"],
@@ -9726,7 +9711,7 @@ var pokemon = [
       evos: ["reuniclus"],
       eggGroups: ["Amorphous"],
     },
-    reuniclus: {
+    {
       num: 579,
       species: "Reuniclus",
       types: ["Psychic"],
@@ -9739,7 +9724,7 @@ var pokemon = [
       evoLevel: 41,
       eggGroups: ["Amorphous"],
     },
-    ducklett: {
+    {
       num: 580,
       species: "Ducklett",
       types: ["Water", "Flying"],
@@ -9751,7 +9736,7 @@ var pokemon = [
       evos: ["swanna"],
       eggGroups: ["Water 1", "Flying"],
     },
-    swanna: {
+    {
       num: 581,
       species: "Swanna",
       types: ["Water", "Flying"],
@@ -9764,7 +9749,7 @@ var pokemon = [
       evoLevel: 35,
       eggGroups: ["Water 1", "Flying"],
     },
-    vanillite: {
+    {
       num: 582,
       species: "Vanillite",
       types: ["Ice"],
@@ -9776,7 +9761,7 @@ var pokemon = [
       evos: ["vanillish"],
       eggGroups: ["Mineral"],
     },
-    vanillish: {
+    {
       num: 583,
       species: "Vanillish",
       types: ["Ice"],
@@ -9790,7 +9775,7 @@ var pokemon = [
       evos: ["vanilluxe"],
       eggGroups: ["Mineral"],
     },
-    vanilluxe: {
+    {
       num: 584,
       species: "Vanilluxe",
       types: ["Ice"],
@@ -9803,7 +9788,7 @@ var pokemon = [
       evoLevel: 47,
       eggGroups: ["Mineral"],
     },
-    deerling: {
+    {
       num: 585,
       species: "Deerling",
       baseForme: "Spring",
@@ -9817,7 +9802,7 @@ var pokemon = [
       eggGroups: ["Field"],
       otherForms: ["deerlingsummer", "deerlingautumn", "deerlingwinter"],
     },
-    sawsbuck: {
+    {
       num: 586,
       species: "Sawsbuck",
       baseForme: "Spring",
@@ -9832,7 +9817,7 @@ var pokemon = [
       eggGroups: ["Field"],
       otherForms: ["sawsbucksummer", "sawsbuckautumn", "sawsbuckwinter"],
     },
-    emolga: {
+    {
       num: 587,
       species: "Emolga",
       types: ["Electric", "Flying"],
@@ -9843,7 +9828,7 @@ var pokemon = [
       color: "White",
       eggGroups: ["Field"],
     },
-    karrablast: {
+    {
       num: 588,
       species: "Karrablast",
       types: ["Bug"],
@@ -9855,7 +9840,7 @@ var pokemon = [
       evos: ["escavalier"],
       eggGroups: ["Bug"],
     },
-    escavalier: {
+    {
       num: 589,
       species: "Escavalier",
       types: ["Bug", "Steel"],
@@ -9869,7 +9854,7 @@ var pokemon = [
       evoCondition: "with a Shelmet",
       eggGroups: ["Bug"],
     },
-    foongus: {
+    {
       num: 590,
       species: "Foongus",
       types: ["Grass", "Poison"],
@@ -9881,7 +9866,7 @@ var pokemon = [
       evos: ["amoonguss"],
       eggGroups: ["Grass"],
     },
-    amoonguss: {
+    {
       num: 591,
       species: "Amoonguss",
       types: ["Grass", "Poison"],
@@ -9894,7 +9879,7 @@ var pokemon = [
       evoLevel: 39,
       eggGroups: ["Grass"],
     },
-    frillish: {
+    {
       num: 592,
       species: "Frillish",
       types: ["Water", "Ghost"],
@@ -9906,7 +9891,7 @@ var pokemon = [
       evos: ["jellicent"],
       eggGroups: ["Amorphous"],
     },
-    jellicent: {
+    {
       num: 593,
       species: "Jellicent",
       types: ["Water", "Ghost"],
@@ -9919,7 +9904,7 @@ var pokemon = [
       evoLevel: 40,
       eggGroups: ["Amorphous"],
     },
-    alomomola: {
+    {
       num: 594,
       species: "Alomomola",
       types: ["Water"],
@@ -9930,7 +9915,7 @@ var pokemon = [
       color: "Pink",
       eggGroups: ["Water 1", "Water 2"],
     },
-    joltik: {
+    {
       num: 595,
       species: "Joltik",
       types: ["Bug", "Electric"],
@@ -9942,7 +9927,7 @@ var pokemon = [
       evos: ["galvantula"],
       eggGroups: ["Bug"],
     },
-    galvantula: {
+    {
       num: 596,
       species: "Galvantula",
       types: ["Bug", "Electric"],
@@ -9955,7 +9940,7 @@ var pokemon = [
       evoLevel: 36,
       eggGroups: ["Bug"],
     },
-    ferroseed: {
+    {
       num: 597,
       species: "Ferroseed",
       types: ["Grass", "Steel"],
@@ -9967,7 +9952,7 @@ var pokemon = [
       evos: ["ferrothorn"],
       eggGroups: ["Grass", "Mineral"],
     },
-    ferrothorn: {
+    {
       num: 598,
       species: "Ferrothorn",
       types: ["Grass", "Steel"],
@@ -9980,7 +9965,7 @@ var pokemon = [
       evoLevel: 40,
       eggGroups: ["Grass", "Mineral"],
     },
-    klink: {
+    {
       num: 599,
       species: "Klink",
       types: ["Steel"],
@@ -9993,7 +9978,7 @@ var pokemon = [
       evos: ["klang"],
       eggGroups: ["Mineral"],
     },
-    klang: {
+    {
       num: 600,
       species: "Klang",
       types: ["Steel"],
@@ -10008,7 +9993,7 @@ var pokemon = [
       evos: ["klinklang"],
       eggGroups: ["Mineral"],
     },
-    klinklang: {
+    {
       num: 601,
       species: "Klinklang",
       types: ["Steel"],
@@ -10022,7 +10007,7 @@ var pokemon = [
       evoLevel: 49,
       eggGroups: ["Mineral"],
     },
-    tynamo: {
+    {
       num: 602,
       species: "Tynamo",
       types: ["Electric"],
@@ -10034,7 +10019,7 @@ var pokemon = [
       evos: ["eelektrik"],
       eggGroups: ["Amorphous"],
     },
-    eelektrik: {
+    {
       num: 603,
       species: "Eelektrik",
       types: ["Electric"],
@@ -10048,7 +10033,7 @@ var pokemon = [
       evos: ["eelektross"],
       eggGroups: ["Amorphous"],
     },
-    eelektross: {
+    {
       num: 604,
       species: "Eelektross",
       types: ["Electric"],
@@ -10062,7 +10047,7 @@ var pokemon = [
       evoItem: "Thunder Stone",
       eggGroups: ["Amorphous"],
     },
-    elgyem: {
+    {
       num: 605,
       species: "Elgyem",
       types: ["Psychic"],
@@ -10074,7 +10059,7 @@ var pokemon = [
       evos: ["beheeyem"],
       eggGroups: ["Human-Like"],
     },
-    beheeyem: {
+    {
       num: 606,
       species: "Beheeyem",
       types: ["Psychic"],
@@ -10087,7 +10072,7 @@ var pokemon = [
       evoLevel: 42,
       eggGroups: ["Human-Like"],
     },
-    litwick: {
+    {
       num: 607,
       species: "Litwick",
       types: ["Ghost", "Fire"],
@@ -10099,7 +10084,7 @@ var pokemon = [
       evos: ["lampent"],
       eggGroups: ["Amorphous"],
     },
-    lampent: {
+    {
       num: 608,
       species: "Lampent",
       types: ["Ghost", "Fire"],
@@ -10113,7 +10098,7 @@ var pokemon = [
       evos: ["chandelure"],
       eggGroups: ["Amorphous"],
     },
-    chandelure: {
+    {
       num: 609,
       species: "Chandelure",
       types: ["Ghost", "Fire"],
@@ -10127,7 +10112,7 @@ var pokemon = [
       evoItem: "Dusk Stone",
       eggGroups: ["Amorphous"],
     },
-    axew: {
+    {
       num: 610,
       species: "Axew",
       types: ["Dragon"],
@@ -10139,7 +10124,7 @@ var pokemon = [
       evos: ["fraxure"],
       eggGroups: ["Monster", "Dragon"],
     },
-    fraxure: {
+    {
       num: 611,
       species: "Fraxure",
       types: ["Dragon"],
@@ -10153,7 +10138,7 @@ var pokemon = [
       evos: ["haxorus"],
       eggGroups: ["Monster", "Dragon"],
     },
-    haxorus: {
+    {
       num: 612,
       species: "Haxorus",
       types: ["Dragon"],
@@ -10166,7 +10151,7 @@ var pokemon = [
       evoLevel: 48,
       eggGroups: ["Monster", "Dragon"],
     },
-    cubchoo: {
+    {
       num: 613,
       species: "Cubchoo",
       types: ["Ice"],
@@ -10178,7 +10163,7 @@ var pokemon = [
       evos: ["beartic"],
       eggGroups: ["Field"],
     },
-    beartic: {
+    {
       num: 614,
       species: "Beartic",
       types: ["Ice"],
@@ -10191,7 +10176,7 @@ var pokemon = [
       evoLevel: 37,
       eggGroups: ["Field"],
     },
-    cryogonal: {
+    {
       num: 615,
       species: "Cryogonal",
       types: ["Ice"],
@@ -10203,7 +10188,7 @@ var pokemon = [
       color: "Blue",
       eggGroups: ["Mineral"],
     },
-    shelmet: {
+    {
       num: 616,
       species: "Shelmet",
       types: ["Bug"],
@@ -10215,7 +10200,7 @@ var pokemon = [
       evos: ["accelgor"],
       eggGroups: ["Bug"],
     },
-    accelgor: {
+    {
       num: 617,
       species: "Accelgor",
       types: ["Bug"],
@@ -10229,7 +10214,7 @@ var pokemon = [
       evoCondition: "with a Karrablast",
       eggGroups: ["Bug"],
     },
-    stunfisk: {
+    {
       num: 618,
       species: "Stunfisk",
       types: ["Ground", "Electric"],
@@ -10241,7 +10226,7 @@ var pokemon = [
       eggGroups: ["Water 1", "Amorphous"],
       otherFormes: ["stunfiskgalar"],
     },
-    stunfiskgalar: {
+    {
       num: 618,
       species: "Stunfisk-Galar",
       baseSpecies: "Stunfisk",
@@ -10254,7 +10239,7 @@ var pokemon = [
       color: "Green",
       eggGroups: ["Water 1", "Amorphous"],
     },
-    mienfoo: {
+    {
       num: 619,
       species: "Mienfoo",
       types: ["Fighting"],
@@ -10266,7 +10251,7 @@ var pokemon = [
       evos: ["mienshao"],
       eggGroups: ["Field", "Human-Like"],
     },
-    mienshao: {
+    {
       num: 620,
       species: "Mienshao",
       types: ["Fighting"],
@@ -10279,7 +10264,7 @@ var pokemon = [
       evoLevel: 50,
       eggGroups: ["Field", "Human-Like"],
     },
-    druddigon: {
+    {
       num: 621,
       species: "Druddigon",
       types: ["Dragon"],
@@ -10290,7 +10275,7 @@ var pokemon = [
       color: "Red",
       eggGroups: ["Monster", "Dragon"],
     },
-    golett: {
+    {
       num: 622,
       species: "Golett",
       types: ["Ground", "Ghost"],
@@ -10303,7 +10288,7 @@ var pokemon = [
       evos: ["golurk"],
       eggGroups: ["Mineral"],
     },
-    golurk: {
+    {
       num: 623,
       species: "Golurk",
       types: ["Ground", "Ghost"],
@@ -10317,7 +10302,7 @@ var pokemon = [
       evoLevel: 43,
       eggGroups: ["Mineral"],
     },
-    pawniard: {
+    {
       num: 624,
       species: "Pawniard",
       types: ["Dark", "Steel"],
@@ -10329,7 +10314,7 @@ var pokemon = [
       evos: ["bisharp"],
       eggGroups: ["Human-Like"],
     },
-    bisharp: {
+    {
       num: 625,
       species: "Bisharp",
       types: ["Dark", "Steel"],
@@ -10342,7 +10327,7 @@ var pokemon = [
       evoLevel: 52,
       eggGroups: ["Human-Like"],
     },
-    bouffalant: {
+    {
       num: 626,
       species: "Bouffalant",
       types: ["Normal"],
@@ -10353,7 +10338,7 @@ var pokemon = [
       color: "Brown",
       eggGroups: ["Field"],
     },
-    rufflet: {
+    {
       num: 627,
       species: "Rufflet",
       types: ["Normal", "Flying"],
@@ -10366,7 +10351,7 @@ var pokemon = [
       evos: ["braviary"],
       eggGroups: ["Flying"],
     },
-    braviary: {
+    {
       num: 628,
       species: "Braviary",
       types: ["Normal", "Flying"],
@@ -10380,7 +10365,7 @@ var pokemon = [
       evoLevel: 54,
       eggGroups: ["Flying"],
     },
-    vullaby: {
+    {
       num: 629,
       species: "Vullaby",
       types: ["Dark", "Flying"],
@@ -10393,7 +10378,7 @@ var pokemon = [
       evos: ["mandibuzz"],
       eggGroups: ["Flying"],
     },
-    mandibuzz: {
+    {
       num: 630,
       species: "Mandibuzz",
       types: ["Dark", "Flying"],
@@ -10407,7 +10392,7 @@ var pokemon = [
       evoLevel: 54,
       eggGroups: ["Flying"],
     },
-    heatmor: {
+    {
       num: 631,
       species: "Heatmor",
       types: ["Fire"],
@@ -10418,7 +10403,7 @@ var pokemon = [
       color: "Red",
       eggGroups: ["Field"],
     },
-    durant: {
+    {
       num: 632,
       species: "Durant",
       types: ["Bug", "Steel"],
@@ -10429,7 +10414,7 @@ var pokemon = [
       color: "Gray",
       eggGroups: ["Bug"],
     },
-    deino: {
+    {
       num: 633,
       species: "Deino",
       types: ["Dark", "Dragon"],
@@ -10441,7 +10426,7 @@ var pokemon = [
       evos: ["zweilous"],
       eggGroups: ["Dragon"],
     },
-    zweilous: {
+    {
       num: 634,
       species: "Zweilous",
       types: ["Dark", "Dragon"],
@@ -10455,7 +10440,7 @@ var pokemon = [
       evos: ["hydreigon"],
       eggGroups: ["Dragon"],
     },
-    hydreigon: {
+    {
       num: 635,
       species: "Hydreigon",
       types: ["Dark", "Dragon"],
@@ -10468,7 +10453,7 @@ var pokemon = [
       evoLevel: 64,
       eggGroups: ["Dragon"],
     },
-    larvesta: {
+    {
       num: 636,
       species: "Larvesta",
       types: ["Bug", "Fire"],
@@ -10480,7 +10465,7 @@ var pokemon = [
       evos: ["volcarona"],
       eggGroups: ["Bug"],
     },
-    volcarona: {
+    {
       num: 637,
       species: "Volcarona",
       types: ["Bug", "Fire"],
@@ -10493,7 +10478,7 @@ var pokemon = [
       evoLevel: 59,
       eggGroups: ["Bug"],
     },
-    cobalion: {
+    {
       num: 638,
       species: "Cobalion",
       types: ["Steel", "Fighting"],
@@ -10505,7 +10490,7 @@ var pokemon = [
       color: "Blue",
       eggGroups: ["Undiscovered"],
     },
-    terrakion: {
+    {
       num: 639,
       species: "Terrakion",
       types: ["Rock", "Fighting"],
@@ -10517,7 +10502,7 @@ var pokemon = [
       color: "Gray",
       eggGroups: ["Undiscovered"],
     },
-    virizion: {
+    {
       num: 640,
       species: "Virizion",
       types: ["Grass", "Fighting"],
@@ -10529,7 +10514,7 @@ var pokemon = [
       color: "Green",
       eggGroups: ["Undiscovered"],
     },
-    tornadus: {
+    {
       num: 641,
       species: "Tornadus",
       baseForme: "Incarnate",
@@ -10543,7 +10528,7 @@ var pokemon = [
       eggGroups: ["Undiscovered"],
       otherFormes: ["tornadustherian"],
     },
-    tornadustherian: {
+    {
       num: 641,
       species: "Tornadus-Therian",
       baseSpecies: "Tornadus",
@@ -10558,7 +10543,7 @@ var pokemon = [
       eggGroups: ["Undiscovered"],
       inheritsFrom: "tornadus",
     },
-    thundurus: {
+    {
       num: 642,
       species: "Thundurus",
       baseForme: "Incarnate",
@@ -10572,7 +10557,7 @@ var pokemon = [
       eggGroups: ["Undiscovered"],
       otherFormes: ["thundurustherian"],
     },
-    thundurustherian: {
+    {
       num: 642,
       species: "Thundurus-Therian",
       baseSpecies: "Thundurus",
@@ -10587,7 +10572,7 @@ var pokemon = [
       eggGroups: ["Undiscovered"],
       inheritsFrom: "thundurus",
     },
-    reshiram: {
+    {
       num: 643,
       species: "Reshiram",
       types: ["Dragon", "Fire"],
@@ -10599,7 +10584,7 @@ var pokemon = [
       color: "White",
       eggGroups: ["Undiscovered"],
     },
-    zekrom: {
+    {
       num: 644,
       species: "Zekrom",
       types: ["Dragon", "Electric"],
@@ -10611,7 +10596,7 @@ var pokemon = [
       color: "Black",
       eggGroups: ["Undiscovered"],
     },
-    landorus: {
+    {
       num: 645,
       species: "Landorus",
       baseForme: "Incarnate",
@@ -10625,7 +10610,7 @@ var pokemon = [
       eggGroups: ["Undiscovered"],
       otherFormes: ["landorustherian"],
     },
-    landorustherian: {
+    {
       num: 645,
       species: "Landorus-Therian",
       baseSpecies: "Landorus",
@@ -10640,7 +10625,7 @@ var pokemon = [
       eggGroups: ["Undiscovered"],
       inheritsFrom: "landorus",
     },
-    kyurem: {
+    {
       num: 646,
       species: "Kyurem",
       types: ["Dragon", "Ice"],
@@ -10653,7 +10638,7 @@ var pokemon = [
       eggGroups: ["Undiscovered"],
       otherFormes: ["kyuremblack", "kyuremwhite"],
     },
-    kyuremblack: {
+    {
       num: 646,
       species: "Kyurem-Black",
       baseSpecies: "Kyurem",
@@ -10667,7 +10652,7 @@ var pokemon = [
       color: "Gray",
       eggGroups: ["Undiscovered"],
     },
-    kyuremwhite: {
+    {
       num: 646,
       species: "Kyurem-White",
       baseSpecies: "Kyurem",
@@ -10681,7 +10666,7 @@ var pokemon = [
       color: "Gray",
       eggGroups: ["Undiscovered"],
     },
-    keldeo: {
+    {
       num: 647,
       species: "Keldeo",
       baseForme: "Ordinary",
@@ -10695,7 +10680,7 @@ var pokemon = [
       eggGroups: ["Undiscovered"],
       otherFormes: ["keldeoresolute"],
     },
-    keldeoresolute: {
+    {
       num: 647,
       species: "Keldeo-Resolute",
       baseSpecies: "Keldeo",
@@ -10710,7 +10695,7 @@ var pokemon = [
       eggGroups: ["Undiscovered"],
       inheritsFrom: "keldeo",
     },
-    meloetta: {
+    {
       num: 648,
       species: "Meloetta",
       baseForme: "Aria",
@@ -10724,7 +10709,7 @@ var pokemon = [
       eggGroups: ["Undiscovered"],
       otherFormes: ["meloettapirouette"],
     },
-    meloettapirouette: {
+    {
       num: 648,
       species: "Meloetta-Pirouette",
       baseSpecies: "Meloetta",
@@ -10738,7 +10723,7 @@ var pokemon = [
       color: "White",
       eggGroups: ["Undiscovered"],
     },
-    genesect: {
+    {
       num: 649,
       species: "Genesect",
       types: ["Bug", "Steel"],
@@ -10751,7 +10736,7 @@ var pokemon = [
       eggGroups: ["Undiscovered"],
       otherFormes: ["genesectdouse", "genesectshock", "genesectburn", "genesectchill"],
     },
-    genesectdouse: {
+    {
       num: 649,
       species: "Genesect-Douse",
       baseSpecies: "Genesect",
@@ -10766,7 +10751,7 @@ var pokemon = [
       eggGroups: ["Undiscovered"],
       inheritsFrom: "genesect",
     },
-    genesectshock: {
+    {
       num: 649,
       species: "Genesect-Shock",
       baseSpecies: "Genesect",
@@ -10781,7 +10766,7 @@ var pokemon = [
       eggGroups: ["Undiscovered"],
       inheritsFrom: "genesect",
     },
-    genesectburn: {
+    {
       num: 649,
       species: "Genesect-Burn",
       baseSpecies: "Genesect",
@@ -10796,7 +10781,7 @@ var pokemon = [
       eggGroups: ["Undiscovered"],
       inheritsFrom: "genesect",
     },
-    genesectchill: {
+    {
       num: 649,
       species: "Genesect-Chill",
       baseSpecies: "Genesect",
@@ -10811,7 +10796,7 @@ var pokemon = [
       eggGroups: ["Undiscovered"],
       inheritsFrom: "genesect",
     },
-    chespin: {
+    {
       num: 650,
       species: "Chespin",
       types: ["Grass"],
@@ -10824,7 +10809,7 @@ var pokemon = [
       evos: ["quilladin"],
       eggGroups: ["Field"],
     },
-    quilladin: {
+    {
       num: 651,
       species: "Quilladin",
       types: ["Grass"],
@@ -10839,7 +10824,7 @@ var pokemon = [
       evos: ["chesnaught"],
       eggGroups: ["Field"],
     },
-    chesnaught: {
+    {
       num: 652,
       species: "Chesnaught",
       types: ["Grass", "Fighting"],
@@ -10853,7 +10838,7 @@ var pokemon = [
       evoLevel: 36,
       eggGroups: ["Field"],
     },
-    fennekin: {
+    {
       num: 653,
       species: "Fennekin",
       types: ["Fire"],
@@ -10866,7 +10851,7 @@ var pokemon = [
       evos: ["braixen"],
       eggGroups: ["Field"],
     },
-    braixen: {
+    {
       num: 654,
       species: "Braixen",
       types: ["Fire"],
@@ -10881,7 +10866,7 @@ var pokemon = [
       evos: ["delphox"],
       eggGroups: ["Field"],
     },
-    delphox: {
+    {
       num: 655,
       species: "Delphox",
       types: ["Fire", "Psychic"],
@@ -10895,7 +10880,7 @@ var pokemon = [
       evoLevel: 36,
       eggGroups: ["Field"],
     },
-    froakie: {
+    {
       num: 656,
       species: "Froakie",
       types: ["Water"],
@@ -10908,7 +10893,7 @@ var pokemon = [
       evos: ["frogadier"],
       eggGroups: ["Water 1"],
     },
-    frogadier: {
+    {
       num: 657,
       species: "Frogadier",
       types: ["Water"],
@@ -10923,7 +10908,7 @@ var pokemon = [
       evos: ["greninja"],
       eggGroups: ["Water 1"],
     },
-    greninja: {
+    {
       num: 658,
       species: "Greninja",
       types: ["Water", "Dark"],
@@ -10938,7 +10923,7 @@ var pokemon = [
       eggGroups: ["Water 1"],
       otherFormes: ["greninjaash"],
     },
-    greninjaash: {
+    {
       num: 658,
       species: "Greninja-Ash",
       baseSpecies: "Greninja",
@@ -10952,7 +10937,7 @@ var pokemon = [
       color: "Blue",
       eggGroups: ["Undiscovered"],
     },
-    bunnelby: {
+    {
       num: 659,
       species: "Bunnelby",
       types: ["Normal"],
@@ -10964,7 +10949,7 @@ var pokemon = [
       evos: ["diggersby"],
       eggGroups: ["Field"],
     },
-    diggersby: {
+    {
       num: 660,
       species: "Diggersby",
       types: ["Normal", "Ground"],
@@ -10977,7 +10962,7 @@ var pokemon = [
       evoLevel: 20,
       eggGroups: ["Field"],
     },
-    fletchling: {
+    {
       num: 661,
       species: "Fletchling",
       types: ["Normal", "Flying"],
@@ -10989,7 +10974,7 @@ var pokemon = [
       evos: ["fletchinder"],
       eggGroups: ["Flying"],
     },
-    fletchinder: {
+    {
       num: 662,
       species: "Fletchinder",
       types: ["Fire", "Flying"],
@@ -11003,7 +10988,7 @@ var pokemon = [
       evos: ["talonflame"],
       eggGroups: ["Flying"],
     },
-    talonflame: {
+    {
       num: 663,
       species: "Talonflame",
       types: ["Fire", "Flying"],
@@ -11016,7 +11001,7 @@ var pokemon = [
       evoLevel: 35,
       eggGroups: ["Flying"],
     },
-    scatterbug: {
+    {
       num: 664,
       species: "Scatterbug",
       types: ["Bug"],
@@ -11028,7 +11013,7 @@ var pokemon = [
       evos: ["spewpa"],
       eggGroups: ["Bug"],
     },
-    spewpa: {
+    {
       num: 665,
       species: "Spewpa",
       types: ["Bug"],
@@ -11042,7 +11027,7 @@ var pokemon = [
       evos: ["vivillon"],
       eggGroups: ["Bug"],
     },
-    vivillon: {
+    {
       num: 666,
       species: "Vivillon",
       types: ["Bug", "Flying"],
@@ -11057,7 +11042,7 @@ var pokemon = [
       otherForms: ["vivillonarchipelago", "vivilloncontinental", "vivillonelegant", "vivillongarden", "vivillonhighplains", "vivillonicysnow", "vivillonjungle", "vivillonmarine", "vivillonmodern", "vivillonmonsoon", "vivillonocean", "vivillonpolar", "vivillonriver", "vivillonsandstorm", "vivillonsavanna", "vivillonsun", "vivillontundra"],
       otherFormes: ["vivillonfancy", "vivillonpokeball"],
     },
-    vivillonfancy: {
+    {
       num: 666,
       species: "Vivillon-Fancy",
       baseSpecies: "Vivillon",
@@ -11070,7 +11055,7 @@ var pokemon = [
       color: "Black",
       eggGroups: ["Bug"],
     },
-    vivillonpokeball: {
+    {
       num: 666,
       species: "Vivillon-Pokeball",
       baseSpecies: "Vivillon",
@@ -11083,7 +11068,7 @@ var pokemon = [
       color: "Black",
       eggGroups: ["Bug"],
     },
-    litleo: {
+    {
       num: 667,
       species: "Litleo",
       types: ["Fire", "Normal"],
@@ -11096,7 +11081,7 @@ var pokemon = [
       evos: ["pyroar"],
       eggGroups: ["Field"],
     },
-    pyroar: {
+    {
       num: 668,
       species: "Pyroar",
       types: ["Fire", "Normal"],
@@ -11110,7 +11095,7 @@ var pokemon = [
       evoLevel: 35,
       eggGroups: ["Field"],
     },
-    flabebe: {
+    {
       num: 669,
       species: "Flabe\u0301be\u0301",
       baseForme: "Red",
@@ -11125,7 +11110,7 @@ var pokemon = [
       eggGroups: ["Fairy"],
       otherForms: ["flabebeblue", "flabebeorange", "flabebewhite", "flabebeyellow"],
     },
-    floette: {
+    {
       num: 670,
       species: "Floette",
       baseForme: "Red",
@@ -11143,7 +11128,7 @@ var pokemon = [
       otherForms: ["floetteblue", "floetteorange", "floettewhite", "floetteyellow"],
       otherFormes: ["floetteeternal"],
     },
-    floetteeternal: {
+    {
       num: 670,
       species: "Floette-Eternal",
       baseSpecies: "Floette",
@@ -11157,7 +11142,7 @@ var pokemon = [
       color: "White",
       eggGroups: ["Undiscovered"],
     },
-    florges: {
+    {
       num: 671,
       species: "Florges",
       baseForme: "Red",
@@ -11174,7 +11159,7 @@ var pokemon = [
       eggGroups: ["Fairy"],
       otherForms: ["florgesblue", "florgesorange", "florgeswhite", "florgesyellow"],
     },
-    skiddo: {
+    {
       num: 672,
       species: "Skiddo",
       types: ["Grass"],
@@ -11186,7 +11171,7 @@ var pokemon = [
       evos: ["gogoat"],
       eggGroups: ["Field"],
     },
-    gogoat: {
+    {
       num: 673,
       species: "Gogoat",
       types: ["Grass"],
@@ -11199,7 +11184,7 @@ var pokemon = [
       evoLevel: 32,
       eggGroups: ["Field"],
     },
-    pancham: {
+    {
       num: 674,
       species: "Pancham",
       types: ["Fighting"],
@@ -11211,7 +11196,7 @@ var pokemon = [
       evos: ["pangoro"],
       eggGroups: ["Field", "Human-Like"],
     },
-    pangoro: {
+    {
       num: 675,
       species: "Pangoro",
       types: ["Fighting", "Dark"],
@@ -11224,7 +11209,7 @@ var pokemon = [
       evoLevel: 32,
       eggGroups: ["Field", "Human-Like"],
     },
-    furfrou: {
+    {
       num: 676,
       species: "Furfrou",
       types: ["Normal"],
@@ -11236,7 +11221,7 @@ var pokemon = [
       eggGroups: ["Field"],
       otherForms: ["furfroudandy", "furfroudebutante", "furfroudiamond", "furfrouheart", "furfroukabuki", "furfroulareine", "furfroumatron", "furfroupharaoh", "furfroustar"],
     },
-    espurr: {
+    {
       num: 677,
       species: "Espurr",
       types: ["Psychic"],
@@ -11248,7 +11233,7 @@ var pokemon = [
       evos: ["meowstic"],
       eggGroups: ["Field"],
     },
-    meowstic: {
+    {
       num: 678,
       species: "Meowstic",
       baseForme: "M",
@@ -11264,7 +11249,7 @@ var pokemon = [
       eggGroups: ["Field"],
       otherFormes: ["meowsticf"],
     },
-    meowsticf: {
+    {
       num: 678,
       species: "Meowstic-F",
       baseSpecies: "Meowstic",
@@ -11280,7 +11265,7 @@ var pokemon = [
       evoLevel: 25,
       eggGroups: ["Field"],
     },
-    honedge: {
+    {
       num: 679,
       species: "Honedge",
       types: ["Steel", "Ghost"],
@@ -11292,7 +11277,7 @@ var pokemon = [
       evos: ["doublade"],
       eggGroups: ["Mineral"],
     },
-    doublade: {
+    {
       num: 680,
       species: "Doublade",
       types: ["Steel", "Ghost"],
@@ -11306,7 +11291,7 @@ var pokemon = [
       evos: ["aegislash"],
       eggGroups: ["Mineral"],
     },
-    aegislash: {
+    {
       num: 681,
       species: "Aegislash",
       baseForme: "Shield",
@@ -11322,7 +11307,7 @@ var pokemon = [
       eggGroups: ["Mineral"],
       otherFormes: ["aegislashblade"],
     },
-    aegislashblade: {
+    {
       num: 681,
       species: "Aegislash-Blade",
       baseSpecies: "Aegislash",
@@ -11338,7 +11323,7 @@ var pokemon = [
       evoItem: "Dusk Stone",
       eggGroups: ["Mineral"],
     },
-    spritzee: {
+    {
       num: 682,
       species: "Spritzee",
       types: ["Fairy"],
@@ -11350,7 +11335,7 @@ var pokemon = [
       evos: ["aromatisse"],
       eggGroups: ["Fairy"],
     },
-    aromatisse: {
+    {
       num: 683,
       species: "Aromatisse",
       types: ["Fairy"],
@@ -11364,7 +11349,7 @@ var pokemon = [
       evoItem: "Sachet",
       eggGroups: ["Fairy"],
     },
-    swirlix: {
+    {
       num: 684,
       species: "Swirlix",
       types: ["Fairy"],
@@ -11376,7 +11361,7 @@ var pokemon = [
       evos: ["slurpuff"],
       eggGroups: ["Fairy"],
     },
-    slurpuff: {
+    {
       num: 685,
       species: "Slurpuff",
       types: ["Fairy"],
@@ -11390,7 +11375,7 @@ var pokemon = [
       evoItem: "Whipped Dream",
       eggGroups: ["Fairy"],
     },
-    inkay: {
+    {
       num: 686,
       species: "Inkay",
       types: ["Dark", "Psychic"],
@@ -11402,7 +11387,7 @@ var pokemon = [
       evos: ["malamar"],
       eggGroups: ["Water 1", "Water 2"],
     },
-    malamar: {
+    {
       num: 687,
       species: "Malamar",
       types: ["Dark", "Psychic"],
@@ -11415,7 +11400,7 @@ var pokemon = [
       evoLevel: 30,
       eggGroups: ["Water 1", "Water 2"],
     },
-    binacle: {
+    {
       num: 688,
       species: "Binacle",
       types: ["Rock", "Water"],
@@ -11427,7 +11412,7 @@ var pokemon = [
       evos: ["barbaracle"],
       eggGroups: ["Water 3"],
     },
-    barbaracle: {
+    {
       num: 689,
       species: "Barbaracle",
       types: ["Rock", "Water"],
@@ -11440,7 +11425,7 @@ var pokemon = [
       evoLevel: 39,
       eggGroups: ["Water 3"],
     },
-    skrelp: {
+    {
       num: 690,
       species: "Skrelp",
       types: ["Poison", "Water"],
@@ -11452,7 +11437,7 @@ var pokemon = [
       evos: ["dragalge"],
       eggGroups: ["Water 1", "Dragon"],
     },
-    dragalge: {
+    {
       num: 691,
       species: "Dragalge",
       types: ["Poison", "Dragon"],
@@ -11465,7 +11450,7 @@ var pokemon = [
       evoLevel: 48,
       eggGroups: ["Water 1", "Dragon"],
     },
-    clauncher: {
+    {
       num: 692,
       species: "Clauncher",
       types: ["Water"],
@@ -11477,7 +11462,7 @@ var pokemon = [
       evos: ["clawitzer"],
       eggGroups: ["Water 1", "Water 3"],
     },
-    clawitzer: {
+    {
       num: 693,
       species: "Clawitzer",
       types: ["Water"],
@@ -11490,7 +11475,7 @@ var pokemon = [
       evoLevel: 37,
       eggGroups: ["Water 1", "Water 3"],
     },
-    helioptile: {
+    {
       num: 694,
       species: "Helioptile",
       types: ["Electric", "Normal"],
@@ -11502,7 +11487,7 @@ var pokemon = [
       evos: ["heliolisk"],
       eggGroups: ["Monster", "Dragon"],
     },
-    heliolisk: {
+    {
       num: 695,
       species: "Heliolisk",
       types: ["Electric", "Normal"],
@@ -11516,7 +11501,7 @@ var pokemon = [
       evoItem: "Sun Stone",
       eggGroups: ["Monster", "Dragon"],
     },
-    tyrunt: {
+    {
       num: 696,
       species: "Tyrunt",
       types: ["Rock", "Dragon"],
@@ -11529,7 +11514,7 @@ var pokemon = [
       evos: ["tyrantrum"],
       eggGroups: ["Monster", "Dragon"],
     },
-    tyrantrum: {
+    {
       num: 697,
       species: "Tyrantrum",
       types: ["Rock", "Dragon"],
@@ -11543,7 +11528,7 @@ var pokemon = [
       evoLevel: 39,
       eggGroups: ["Monster", "Dragon"],
     },
-    amaura: {
+    {
       num: 698,
       species: "Amaura",
       types: ["Rock", "Ice"],
@@ -11556,7 +11541,7 @@ var pokemon = [
       evos: ["aurorus"],
       eggGroups: ["Monster"],
     },
-    aurorus: {
+    {
       num: 699,
       species: "Aurorus",
       types: ["Rock", "Ice"],
@@ -11570,7 +11555,7 @@ var pokemon = [
       evoLevel: 39,
       eggGroups: ["Monster"],
     },
-    sylveon: {
+    {
       num: 700,
       species: "Sylveon",
       types: ["Fairy"],
@@ -11585,7 +11570,7 @@ var pokemon = [
       evoCondition: "with a Fairy-type move and two levels of Affection",
       eggGroups: ["Field"],
     },
-    hawlucha: {
+    {
       num: 701,
       species: "Hawlucha",
       types: ["Fighting", "Flying"],
@@ -11596,7 +11581,7 @@ var pokemon = [
       color: "Green",
       eggGroups: ["Flying", "Human-Like"],
     },
-    dedenne: {
+    {
       num: 702,
       species: "Dedenne",
       types: ["Electric", "Fairy"],
@@ -11607,7 +11592,7 @@ var pokemon = [
       color: "Yellow",
       eggGroups: ["Field", "Fairy"],
     },
-    carbink: {
+    {
       num: 703,
       species: "Carbink",
       types: ["Rock", "Fairy"],
@@ -11619,7 +11604,7 @@ var pokemon = [
       color: "Gray",
       eggGroups: ["Fairy", "Mineral"],
     },
-    goomy: {
+    {
       num: 704,
       species: "Goomy",
       types: ["Dragon"],
@@ -11631,7 +11616,7 @@ var pokemon = [
       evos: ["sliggoo"],
       eggGroups: ["Dragon"],
     },
-    sliggoo: {
+    {
       num: 705,
       species: "Sliggoo",
       types: ["Dragon"],
@@ -11645,7 +11630,7 @@ var pokemon = [
       evos: ["goodra"],
       eggGroups: ["Dragon"],
     },
-    goodra: {
+    {
       num: 706,
       species: "Goodra",
       types: ["Dragon"],
@@ -11658,7 +11643,7 @@ var pokemon = [
       evoLevel: 50,
       eggGroups: ["Dragon"],
     },
-    klefki: {
+    {
       num: 707,
       species: "Klefki",
       types: ["Steel", "Fairy"],
@@ -11669,7 +11654,7 @@ var pokemon = [
       color: "Gray",
       eggGroups: ["Mineral"],
     },
-    phantump: {
+    {
       num: 708,
       species: "Phantump",
       types: ["Ghost", "Grass"],
@@ -11681,7 +11666,7 @@ var pokemon = [
       evos: ["trevenant"],
       eggGroups: ["Grass", "Amorphous"],
     },
-    trevenant: {
+    {
       num: 709,
       species: "Trevenant",
       types: ["Ghost", "Grass"],
@@ -11694,7 +11679,7 @@ var pokemon = [
       evoType: "trade",
       eggGroups: ["Grass", "Amorphous"],
     },
-    pumpkaboo: {
+    {
       num: 710,
       species: "Pumpkaboo",
       baseForme: "Average",
@@ -11708,7 +11693,7 @@ var pokemon = [
       eggGroups: ["Amorphous"],
       otherFormes: ["pumpkaboosmall", "pumpkaboolarge", "pumpkaboosuper"],
     },
-    pumpkaboosmall: {
+    {
       num: 710,
       species: "Pumpkaboo-Small",
       baseSpecies: "Pumpkaboo",
@@ -11723,7 +11708,7 @@ var pokemon = [
       eggGroups: ["Amorphous"],
       inheritsFrom: "pumpkaboo",
     },
-    pumpkaboolarge: {
+    {
       num: 710,
       species: "Pumpkaboo-Large",
       baseSpecies: "Pumpkaboo",
@@ -11738,7 +11723,7 @@ var pokemon = [
       eggGroups: ["Amorphous"],
       inheritsFrom: "pumpkaboo",
     },
-    pumpkaboosuper: {
+    {
       num: 710,
       species: "Pumpkaboo-Super",
       baseSpecies: "Pumpkaboo",
@@ -11753,7 +11738,7 @@ var pokemon = [
       eggGroups: ["Amorphous"],
       inheritsFrom: "pumpkaboo",
     },
-    gourgeist: {
+    {
       num: 711,
       species: "Gourgeist",
       baseForme: "Average",
@@ -11768,7 +11753,7 @@ var pokemon = [
       eggGroups: ["Amorphous"],
       otherFormes: ["gourgeistsmall", "gourgeistlarge", "gourgeistsuper"],
     },
-    gourgeistsmall: {
+    {
       num: 711,
       species: "Gourgeist-Small",
       baseSpecies: "Gourgeist",
@@ -11784,7 +11769,7 @@ var pokemon = [
       eggGroups: ["Amorphous"],
       inheritsFrom: "gourgeist",
     },
-    gourgeistlarge: {
+    {
       num: 711,
       species: "Gourgeist-Large",
       baseSpecies: "Gourgeist",
@@ -11800,7 +11785,7 @@ var pokemon = [
       eggGroups: ["Amorphous"],
       inheritsFrom: "gourgeist",
     },
-    gourgeistsuper: {
+    {
       num: 711,
       species: "Gourgeist-Super",
       baseSpecies: "Gourgeist",
@@ -11816,7 +11801,7 @@ var pokemon = [
       eggGroups: ["Amorphous"],
       inheritsFrom: "gourgeist",
     },
-    bergmite: {
+    {
       num: 712,
       species: "Bergmite",
       types: ["Ice"],
@@ -11828,7 +11813,7 @@ var pokemon = [
       evos: ["avalugg"],
       eggGroups: ["Monster", "Mineral"],
     },
-    avalugg: {
+    {
       num: 713,
       species: "Avalugg",
       types: ["Ice"],
@@ -11841,7 +11826,7 @@ var pokemon = [
       evoLevel: 37,
       eggGroups: ["Monster", "Mineral"],
     },
-    noibat: {
+    {
       num: 714,
       species: "Noibat",
       types: ["Flying", "Dragon"],
@@ -11853,7 +11838,7 @@ var pokemon = [
       evos: ["noivern"],
       eggGroups: ["Flying", "Dragon"],
     },
-    noivern: {
+    {
       num: 715,
       species: "Noivern",
       types: ["Flying", "Dragon"],
@@ -11866,7 +11851,7 @@ var pokemon = [
       evoLevel: 48,
       eggGroups: ["Flying", "Dragon"],
     },
-    xerneas: {
+    {
       num: 716,
       species: "Xerneas",
       types: ["Fairy"],
@@ -11878,7 +11863,7 @@ var pokemon = [
       color: "Blue",
       eggGroups: ["Undiscovered"],
     },
-    yveltal: {
+    {
       num: 717,
       species: "Yveltal",
       types: ["Dark", "Flying"],
@@ -11890,7 +11875,7 @@ var pokemon = [
       color: "Red",
       eggGroups: ["Undiscovered"],
     },
-    zygarde: {
+    {
       num: 718,
       species: "Zygarde",
       baseForme: "50%",
@@ -11904,7 +11889,7 @@ var pokemon = [
       eggGroups: ["Undiscovered"],
       otherFormes: ["zygarde10", "zygardecomplete"],
     },
-    zygarde10: {
+    {
       num: 718,
       species: "Zygarde-10%",
       baseSpecies: "Zygarde",
@@ -11919,7 +11904,7 @@ var pokemon = [
       eggGroups: ["Undiscovered"],
       inheritsFrom: "zygarde",
     },
-    zygardecomplete: {
+    {
       num: 718,
       species: "Zygarde-Complete",
       baseSpecies: "Zygarde",
@@ -11934,7 +11919,7 @@ var pokemon = [
       eggGroups: ["Undiscovered"],
       inheritsFrom: "zygarde",
     },
-    diancie: {
+    {
       num: 719,
       species: "Diancie",
       types: ["Rock", "Fairy"],
@@ -11947,7 +11932,7 @@ var pokemon = [
       eggGroups: ["Undiscovered"],
       otherFormes: ["dianciemega"],
     },
-    dianciemega: {
+    {
       num: 719,
       species: "Diancie-Mega",
       baseSpecies: "Diancie",
@@ -11961,7 +11946,7 @@ var pokemon = [
       color: "Pink",
       eggGroups: ["Undiscovered"],
     },
-    hoopa: {
+    {
       num: 720,
       species: "Hoopa",
       baseForme: "Confined",
@@ -11975,7 +11960,7 @@ var pokemon = [
       eggGroups: ["Undiscovered"],
       otherFormes: ["hoopaunbound"],
     },
-    hoopaunbound: {
+    {
       num: 720,
       species: "Hoopa-Unbound",
       baseSpecies: "Hoopa",
@@ -11990,7 +11975,7 @@ var pokemon = [
       eggGroups: ["Undiscovered"],
       inheritsFrom: "hoopa",
     },
-    volcanion: {
+    {
       num: 721,
       species: "Volcanion",
       types: ["Fire", "Water"],
@@ -12002,7 +11987,7 @@ var pokemon = [
       color: "Brown",
       eggGroups: ["Undiscovered"],
     },
-    rowlet: {
+    {
       num: 722,
       species: "Rowlet",
       types: ["Grass", "Flying"],
@@ -12015,7 +12000,7 @@ var pokemon = [
       evos: ["dartrix"],
       eggGroups: ["Flying"],
     },
-    dartrix: {
+    {
       num: 723,
       species: "Dartrix",
       types: ["Grass", "Flying"],
@@ -12030,7 +12015,7 @@ var pokemon = [
       evos: ["decidueye"],
       eggGroups: ["Flying"],
     },
-    decidueye: {
+    {
       num: 724,
       species: "Decidueye",
       types: ["Grass", "Ghost"],
@@ -12044,7 +12029,7 @@ var pokemon = [
       evoLevel: 34,
       eggGroups: ["Flying"],
     },
-    litten: {
+    {
       num: 725,
       species: "Litten",
       types: ["Fire"],
@@ -12057,7 +12042,7 @@ var pokemon = [
       evos: ["torracat"],
       eggGroups: ["Field"],
     },
-    torracat: {
+    {
       num: 726,
       species: "Torracat",
       types: ["Fire"],
@@ -12072,7 +12057,7 @@ var pokemon = [
       evos: ["incineroar"],
       eggGroups: ["Field"],
     },
-    incineroar: {
+    {
       num: 727,
       species: "Incineroar",
       types: ["Fire", "Dark"],
@@ -12086,7 +12071,7 @@ var pokemon = [
       evoLevel: 34,
       eggGroups: ["Field"],
     },
-    popplio: {
+    {
       num: 728,
       species: "Popplio",
       types: ["Water"],
@@ -12099,7 +12084,7 @@ var pokemon = [
       evos: ["brionne"],
       eggGroups: ["Water 1", "Field"],
     },
-    brionne: {
+    {
       num: 729,
       species: "Brionne",
       types: ["Water"],
@@ -12114,7 +12099,7 @@ var pokemon = [
       evos: ["primarina"],
       eggGroups: ["Water 1", "Field"],
     },
-    primarina: {
+    {
       num: 730,
       species: "Primarina",
       types: ["Water", "Fairy"],
@@ -12128,7 +12113,7 @@ var pokemon = [
       evoLevel: 34,
       eggGroups: ["Water 1", "Field"],
     },
-    pikipek: {
+    {
       num: 731,
       species: "Pikipek",
       types: ["Normal", "Flying"],
@@ -12140,7 +12125,7 @@ var pokemon = [
       evos: ["trumbeak"],
       eggGroups: ["Flying"],
     },
-    trumbeak: {
+    {
       num: 732,
       species: "Trumbeak",
       types: ["Normal", "Flying"],
@@ -12154,7 +12139,7 @@ var pokemon = [
       evos: ["toucannon"],
       eggGroups: ["Flying"],
     },
-    toucannon: {
+    {
       num: 733,
       species: "Toucannon",
       types: ["Normal", "Flying"],
@@ -12167,7 +12152,7 @@ var pokemon = [
       evoLevel: 28,
       eggGroups: ["Flying"],
     },
-    yungoos: {
+    {
       num: 734,
       species: "Yungoos",
       types: ["Normal"],
@@ -12179,7 +12164,7 @@ var pokemon = [
       evos: ["gumshoos"],
       eggGroups: ["Field"],
     },
-    gumshoos: {
+    {
       num: 735,
       species: "Gumshoos",
       types: ["Normal"],
@@ -12193,7 +12178,7 @@ var pokemon = [
       eggGroups: ["Field"],
       otherFormes: ["gumshoostotem"],
     },
-    gumshoostotem: {
+    {
       num: 735,
       species: "Gumshoos-Totem",
       baseSpecies: "Gumshoos",
@@ -12206,7 +12191,7 @@ var pokemon = [
       color: "Brown",
       eggGroups: ["Field"],
     },
-    grubbin: {
+    {
       num: 736,
       species: "Grubbin",
       types: ["Bug"],
@@ -12218,7 +12203,7 @@ var pokemon = [
       evos: ["charjabug"],
       eggGroups: ["Bug"],
     },
-    charjabug: {
+    {
       num: 737,
       species: "Charjabug",
       types: ["Bug", "Electric"],
@@ -12232,7 +12217,7 @@ var pokemon = [
       evos: ["vikavolt"],
       eggGroups: ["Bug"],
     },
-    vikavolt: {
+    {
       num: 738,
       species: "Vikavolt",
       types: ["Bug", "Electric"],
@@ -12247,7 +12232,7 @@ var pokemon = [
       eggGroups: ["Bug"],
       otherFormes: ["vikavolttotem"],
     },
-    vikavolttotem: {
+    {
       num: 738,
       species: "Vikavolt-Totem",
       baseSpecies: "Vikavolt",
@@ -12260,7 +12245,7 @@ var pokemon = [
       color: "Blue",
       eggGroups: ["Bug"],
     },
-    crabrawler: {
+    {
       num: 739,
       species: "Crabrawler",
       types: ["Fighting"],
@@ -12272,7 +12257,7 @@ var pokemon = [
       evos: ["crabominable"],
       eggGroups: ["Water 3"],
     },
-    crabominable: {
+    {
       num: 740,
       species: "Crabominable",
       types: ["Fighting", "Ice"],
@@ -12286,7 +12271,7 @@ var pokemon = [
       evoCondition: "at Mount Lanakila",
       eggGroups: ["Water 3"],
     },
-    oricorio: {
+    {
       num: 741,
       species: "Oricorio",
       baseForme: "Baile",
@@ -12300,7 +12285,7 @@ var pokemon = [
       eggGroups: ["Flying"],
       otherFormes: ["oricoriopompom", "oricoriopau", "oricoriosensu"],
     },
-    oricoriopompom: {
+    {
       num: 741,
       species: "Oricorio-Pom-Pom",
       baseSpecies: "Oricorio",
@@ -12315,7 +12300,7 @@ var pokemon = [
       eggGroups: ["Flying"],
       inheritsFrom: "oricorio",
     },
-    oricoriopau: {
+    {
       num: 741,
       species: "Oricorio-Pa'u",
       baseSpecies: "Oricorio",
@@ -12330,7 +12315,7 @@ var pokemon = [
       eggGroups: ["Flying"],
       inheritsFrom: "oricorio",
     },
-    oricoriosensu: {
+    {
       num: 741,
       species: "Oricorio-Sensu",
       baseSpecies: "Oricorio",
@@ -12345,7 +12330,7 @@ var pokemon = [
       eggGroups: ["Flying"],
       inheritsFrom: "oricorio",
     },
-    cutiefly: {
+    {
       num: 742,
       species: "Cutiefly",
       types: ["Bug", "Fairy"],
@@ -12357,7 +12342,7 @@ var pokemon = [
       evos: ["ribombee"],
       eggGroups: ["Bug", "Fairy"],
     },
-    ribombee: {
+    {
       num: 743,
       species: "Ribombee",
       types: ["Bug", "Fairy"],
@@ -12371,7 +12356,7 @@ var pokemon = [
       eggGroups: ["Bug", "Fairy"],
       otherFormes: ["ribombeetotem"],
     },
-    ribombeetotem: {
+    {
       num: 743,
       species: "Ribombee-Totem",
       baseSpecies: "Ribombee",
@@ -12384,7 +12369,7 @@ var pokemon = [
       color: "Yellow",
       eggGroups: ["Bug", "Fairy"],
     },
-    rockruff: {
+    {
       num: 744,
       species: "Rockruff",
       baseForme: "Midday",
@@ -12397,7 +12382,7 @@ var pokemon = [
       evos: ["lycanroc", "lycanrocmidnight", "lycanrocdusk"],
       eggGroups: ["Field"],
     },
-    lycanroc: {
+    {
       num: 745,
       species: "Lycanroc",
       baseForme: "Midday",
@@ -12412,7 +12397,7 @@ var pokemon = [
       eggGroups: ["Field"],
       otherFormes: ["lycanrocmidnight", "lycanrocdusk"],
     },
-    lycanrocmidnight: {
+    {
       num: 745,
       species: "Lycanroc-Midnight",
       baseSpecies: "Lycanroc",
@@ -12427,7 +12412,7 @@ var pokemon = [
       evoLevel: 25,
       eggGroups: ["Field"],
     },
-    lycanrocdusk: {
+    {
       num: 745,
       species: "Lycanroc-Dusk",
       baseSpecies: "Lycanroc",
@@ -12442,7 +12427,7 @@ var pokemon = [
       evoLevel: 25,
       eggGroups: ["Field"],
     },
-    wishiwashi: {
+    {
       num: 746,
       species: "Wishiwashi",
       baseForme: "Solo",
@@ -12455,7 +12440,7 @@ var pokemon = [
       eggGroups: ["Water 2"],
       otherFormes: ["wishiwashischool"],
     },
-    wishiwashischool: {
+    {
       num: 746,
       species: "Wishiwashi-School",
       baseSpecies: "Wishiwashi",
@@ -12468,7 +12453,7 @@ var pokemon = [
       color: "Blue",
       eggGroups: ["Water 2"],
     },
-    mareanie: {
+    {
       num: 747,
       species: "Mareanie",
       types: ["Poison", "Water"],
@@ -12480,7 +12465,7 @@ var pokemon = [
       evos: ["toxapex"],
       eggGroups: ["Water 1"],
     },
-    toxapex: {
+    {
       num: 748,
       species: "Toxapex",
       types: ["Poison", "Water"],
@@ -12493,7 +12478,7 @@ var pokemon = [
       evoLevel: 38,
       eggGroups: ["Water 1"],
     },
-    mudbray: {
+    {
       num: 749,
       species: "Mudbray",
       types: ["Ground"],
@@ -12505,7 +12490,7 @@ var pokemon = [
       evos: ["mudsdale"],
       eggGroups: ["Field"],
     },
-    mudsdale: {
+    {
       num: 750,
       species: "Mudsdale",
       types: ["Ground"],
@@ -12518,7 +12503,7 @@ var pokemon = [
       evoLevel: 30,
       eggGroups: ["Field"],
     },
-    dewpider: {
+    {
       num: 751,
       species: "Dewpider",
       types: ["Water", "Bug"],
@@ -12530,7 +12515,7 @@ var pokemon = [
       evos: ["araquanid"],
       eggGroups: ["Water 1", "Bug"],
     },
-    araquanid: {
+    {
       num: 752,
       species: "Araquanid",
       types: ["Water", "Bug"],
@@ -12544,7 +12529,7 @@ var pokemon = [
       eggGroups: ["Water 1", "Bug"],
       otherFormes: ["araquanidtotem"],
     },
-    araquanidtotem: {
+    {
       num: 752,
       species: "Araquanid-Totem",
       baseSpecies: "Araquanid",
@@ -12557,7 +12542,7 @@ var pokemon = [
       color: "Green",
       eggGroups: ["Water 1", "Bug"],
     },
-    fomantis: {
+    {
       num: 753,
       species: "Fomantis",
       types: ["Grass"],
@@ -12569,7 +12554,7 @@ var pokemon = [
       evos: ["lurantis"],
       eggGroups: ["Grass"],
     },
-    lurantis: {
+    {
       num: 754,
       species: "Lurantis",
       types: ["Grass"],
@@ -12583,7 +12568,7 @@ var pokemon = [
       eggGroups: ["Grass"],
       otherFormes: ["lurantistotem"],
     },
-    lurantistotem: {
+    {
       num: 754,
       species: "Lurantis-Totem",
       baseSpecies: "Lurantis",
@@ -12596,7 +12581,7 @@ var pokemon = [
       color: "Pink",
       eggGroups: ["Grass"],
     },
-    morelull: {
+    {
       num: 755,
       species: "Morelull",
       types: ["Grass", "Fairy"],
@@ -12608,7 +12593,7 @@ var pokemon = [
       evos: ["shiinotic"],
       eggGroups: ["Grass"],
     },
-    shiinotic: {
+    {
       num: 756,
       species: "Shiinotic",
       types: ["Grass", "Fairy"],
@@ -12621,7 +12606,7 @@ var pokemon = [
       evoLevel: 24,
       eggGroups: ["Grass"],
     },
-    salandit: {
+    {
       num: 757,
       species: "Salandit",
       types: ["Poison", "Fire"],
@@ -12634,7 +12619,7 @@ var pokemon = [
       evos: ["salazzle"],
       eggGroups: ["Monster", "Dragon"],
     },
-    salazzle: {
+    {
       num: 758,
       species: "Salazzle",
       types: ["Poison", "Fire"],
@@ -12649,7 +12634,7 @@ var pokemon = [
       eggGroups: ["Monster", "Dragon"],
       otherFormes: ["salazzletotem"],
     },
-    salazzletotem: {
+    {
       num: 758,
       species: "Salazzle-Totem",
       baseSpecies: "Salazzle",
@@ -12663,7 +12648,7 @@ var pokemon = [
       color: "Black",
       eggGroups: ["Monster", "Dragon"],
     },
-    stufful: {
+    {
       num: 759,
       species: "Stufful",
       types: ["Normal", "Fighting"],
@@ -12675,7 +12660,7 @@ var pokemon = [
       evos: ["bewear"],
       eggGroups: ["Field"],
     },
-    bewear: {
+    {
       num: 760,
       species: "Bewear",
       types: ["Normal", "Fighting"],
@@ -12688,7 +12673,7 @@ var pokemon = [
       evoLevel: 27,
       eggGroups: ["Field"],
     },
-    bounsweet: {
+    {
       num: 761,
       species: "Bounsweet",
       types: ["Grass"],
@@ -12701,7 +12686,7 @@ var pokemon = [
       evos: ["steenee"],
       eggGroups: ["Grass"],
     },
-    steenee: {
+    {
       num: 762,
       species: "Steenee",
       types: ["Grass"],
@@ -12716,7 +12701,7 @@ var pokemon = [
       evos: ["tsareena"],
       eggGroups: ["Grass"],
     },
-    tsareena: {
+    {
       num: 763,
       species: "Tsareena",
       types: ["Grass"],
@@ -12731,7 +12716,7 @@ var pokemon = [
       evoMove: "Stomp",
       eggGroups: ["Grass"],
     },
-    comfey: {
+    {
       num: 764,
       species: "Comfey",
       types: ["Fairy"],
@@ -12743,7 +12728,7 @@ var pokemon = [
       color: "Green",
       eggGroups: ["Grass"],
     },
-    oranguru: {
+    {
       num: 765,
       species: "Oranguru",
       types: ["Normal", "Psychic"],
@@ -12754,7 +12739,7 @@ var pokemon = [
       color: "White",
       eggGroups: ["Field"],
     },
-    passimian: {
+    {
       num: 766,
       species: "Passimian",
       types: ["Fighting"],
@@ -12765,7 +12750,7 @@ var pokemon = [
       color: "White",
       eggGroups: ["Field"],
     },
-    wimpod: {
+    {
       num: 767,
       species: "Wimpod",
       types: ["Bug", "Water"],
@@ -12777,7 +12762,7 @@ var pokemon = [
       evos: ["golisopod"],
       eggGroups: ["Bug", "Water 3"],
     },
-    golisopod: {
+    {
       num: 768,
       species: "Golisopod",
       types: ["Bug", "Water"],
@@ -12790,7 +12775,7 @@ var pokemon = [
       evoLevel: 30,
       eggGroups: ["Bug", "Water 3"],
     },
-    sandygast: {
+    {
       num: 769,
       species: "Sandygast",
       types: ["Ghost", "Ground"],
@@ -12802,7 +12787,7 @@ var pokemon = [
       evos: ["palossand"],
       eggGroups: ["Amorphous"],
     },
-    palossand: {
+    {
       num: 770,
       species: "Palossand",
       types: ["Ghost", "Ground"],
@@ -12815,7 +12800,7 @@ var pokemon = [
       evoLevel: 42,
       eggGroups: ["Amorphous"],
     },
-    pyukumuku: {
+    {
       num: 771,
       species: "Pyukumuku",
       types: ["Water"],
@@ -12826,7 +12811,7 @@ var pokemon = [
       color: "Black",
       eggGroups: ["Water 1"],
     },
-    typenull: {
+    {
       num: 772,
       species: "Type: Null",
       types: ["Normal"],
@@ -12839,7 +12824,7 @@ var pokemon = [
       evos: ["silvally"],
       eggGroups: ["Undiscovered"],
     },
-    silvally: {
+    {
       num: 773,
       species: "Silvally",
       types: ["Normal"],
@@ -12854,7 +12839,7 @@ var pokemon = [
       eggGroups: ["Undiscovered"],
       otherFormes: ["silvallybug", "silvallydark", "silvallydragon", "silvallyelectric", "silvallyfairy", "silvallyfighting", "silvallyfire", "silvallyflying", "silvallyghost", "silvallygrass", "silvallyground", "silvallyice", "silvallypoison", "silvallypsychic", "silvallyrock", "silvallysteel", "silvallywater"],
     },
-    silvallybug: {
+    {
       num: 773,
       species: "Silvally-Bug",
       baseSpecies: "Silvally",
@@ -12871,7 +12856,7 @@ var pokemon = [
       eggGroups: ["Undiscovered"],
       inheritsFrom: "silvally",
     },
-    silvallydark: {
+    {
       num: 773,
       species: "Silvally-Dark",
       baseSpecies: "Silvally",
@@ -12888,7 +12873,7 @@ var pokemon = [
       eggGroups: ["Undiscovered"],
       inheritsFrom: "silvally",
     },
-    silvallydragon: {
+    {
       num: 773,
       species: "Silvally-Dragon",
       baseSpecies: "Silvally",
@@ -12905,7 +12890,7 @@ var pokemon = [
       eggGroups: ["Undiscovered"],
       inheritsFrom: "silvally",
     },
-    silvallyelectric: {
+    {
       num: 773,
       species: "Silvally-Electric",
       baseSpecies: "Silvally",
@@ -12922,7 +12907,7 @@ var pokemon = [
       eggGroups: ["Undiscovered"],
       inheritsFrom: "silvally",
     },
-    silvallyfairy: {
+    {
       num: 773,
       species: "Silvally-Fairy",
       baseSpecies: "Silvally",
@@ -12939,7 +12924,7 @@ var pokemon = [
       eggGroups: ["Undiscovered"],
       inheritsFrom: "silvally",
     },
-    silvallyfighting: {
+    {
       num: 773,
       species: "Silvally-Fighting",
       baseSpecies: "Silvally",
@@ -12956,7 +12941,7 @@ var pokemon = [
       eggGroups: ["Undiscovered"],
       inheritsFrom: "silvally",
     },
-    silvallyfire: {
+    {
       num: 773,
       species: "Silvally-Fire",
       baseSpecies: "Silvally",
@@ -12973,7 +12958,7 @@ var pokemon = [
       eggGroups: ["Undiscovered"],
       inheritsFrom: "silvally",
     },
-    silvallyflying: {
+    {
       num: 773,
       species: "Silvally-Flying",
       baseSpecies: "Silvally",
@@ -12990,7 +12975,7 @@ var pokemon = [
       eggGroups: ["Undiscovered"],
       inheritsFrom: "silvally",
     },
-    silvallyghost: {
+    {
       num: 773,
       species: "Silvally-Ghost",
       baseSpecies: "Silvally",
@@ -13007,7 +12992,7 @@ var pokemon = [
       eggGroups: ["Undiscovered"],
       inheritsFrom: "silvally",
     },
-    silvallygrass: {
+    {
       num: 773,
       species: "Silvally-Grass",
       baseSpecies: "Silvally",
@@ -13024,7 +13009,7 @@ var pokemon = [
       eggGroups: ["Undiscovered"],
       inheritsFrom: "silvally",
     },
-    silvallyground: {
+    {
       num: 773,
       species: "Silvally-Ground",
       baseSpecies: "Silvally",
@@ -13041,7 +13026,7 @@ var pokemon = [
       eggGroups: ["Undiscovered"],
       inheritsFrom: "silvally",
     },
-    silvallyice: {
+    {
       num: 773,
       species: "Silvally-Ice",
       baseSpecies: "Silvally",
@@ -13058,7 +13043,7 @@ var pokemon = [
       eggGroups: ["Undiscovered"],
       inheritsFrom: "silvally",
     },
-    silvallypoison: {
+    {
       num: 773,
       species: "Silvally-Poison",
       baseSpecies: "Silvally",
@@ -13075,7 +13060,7 @@ var pokemon = [
       eggGroups: ["Undiscovered"],
       inheritsFrom: "silvally",
     },
-    silvallypsychic: {
+    {
       num: 773,
       species: "Silvally-Psychic",
       baseSpecies: "Silvally",
@@ -13092,7 +13077,7 @@ var pokemon = [
       eggGroups: ["Undiscovered"],
       inheritsFrom: "silvally",
     },
-    silvallyrock: {
+    {
       num: 773,
       species: "Silvally-Rock",
       baseSpecies: "Silvally",
@@ -13109,7 +13094,7 @@ var pokemon = [
       eggGroups: ["Undiscovered"],
       inheritsFrom: "silvally",
     },
-    silvallysteel: {
+    {
       num: 773,
       species: "Silvally-Steel",
       baseSpecies: "Silvally",
@@ -13126,7 +13111,7 @@ var pokemon = [
       eggGroups: ["Undiscovered"],
       inheritsFrom: "silvally",
     },
-    silvallywater: {
+    {
       num: 773,
       species: "Silvally-Water",
       baseSpecies: "Silvally",
@@ -13143,7 +13128,7 @@ var pokemon = [
       eggGroups: ["Undiscovered"],
       inheritsFrom: "silvally",
     },
-    minior: {
+    {
       num: 774,
       species: "Minior",
       baseForme: "Red",
@@ -13158,7 +13143,7 @@ var pokemon = [
       otherFormes: ["miniormeteor"],
       otherForms: ["miniororange", "minioryellow", "miniorgreen", "miniorblue", "miniorindigo", "miniorviolet"],
     },
-    miniormeteor: {
+    {
       num: 774,
       species: "Minior-Meteor",
       baseSpecies: "Minior",
@@ -13172,7 +13157,7 @@ var pokemon = [
       color: "Brown",
       eggGroups: ["Mineral"],
     },
-    komala: {
+    {
       num: 775,
       species: "Komala",
       types: ["Normal"],
@@ -13183,7 +13168,7 @@ var pokemon = [
       color: "Blue",
       eggGroups: ["Field"],
     },
-    turtonator: {
+    {
       num: 776,
       species: "Turtonator",
       types: ["Fire", "Dragon"],
@@ -13194,7 +13179,7 @@ var pokemon = [
       color: "Red",
       eggGroups: ["Monster", "Dragon"],
     },
-    togedemaru: {
+    {
       num: 777,
       species: "Togedemaru",
       types: ["Electric", "Steel"],
@@ -13206,7 +13191,7 @@ var pokemon = [
       eggGroups: ["Field", "Fairy"],
       otherFormes: ["togedemarutotem"],
     },
-    togedemarutotem: {
+    {
       num: 777,
       species: "Togedemaru-Totem",
       baseSpecies: "Togedemaru",
@@ -13219,7 +13204,7 @@ var pokemon = [
       color: "Gray",
       eggGroups: ["Field", "Fairy"],
     },
-    mimikyu: {
+    {
       num: 778,
       species: "Mimikyu",
       types: ["Ghost", "Fairy"],
@@ -13231,7 +13216,7 @@ var pokemon = [
       eggGroups: ["Amorphous"],
       otherFormes: ["mimikyubusted", "mimikyutotem", "mimikyubustedtotem"],
     },
-    mimikyubusted: {
+    {
       num: 778,
       species: "Mimikyu-Busted",
       baseSpecies: "Mimikyu",
@@ -13245,7 +13230,7 @@ var pokemon = [
       eggGroups: ["Amorphous"],
       inheritsFrom: "mimikyu",
     },
-    mimikyutotem: {
+    {
       num: 778,
       species: "Mimikyu-Totem",
       baseSpecies: "Mimikyu",
@@ -13258,7 +13243,7 @@ var pokemon = [
       color: "Yellow",
       eggGroups: ["Amorphous"],
     },
-    mimikyubustedtotem: {
+    {
       num: 778,
       species: "Mimikyu-Busted-Totem",
       baseSpecies: "Mimikyu",
@@ -13272,7 +13257,7 @@ var pokemon = [
       eggGroups: ["Amorphous"],
       inheritsFrom: "mimikyutotem",
     },
-    bruxish: {
+    {
       num: 779,
       species: "Bruxish",
       types: ["Water", "Psychic"],
@@ -13283,7 +13268,7 @@ var pokemon = [
       color: "Pink",
       eggGroups: ["Water 2"],
     },
-    drampa: {
+    {
       num: 780,
       species: "Drampa",
       types: ["Normal", "Dragon"],
@@ -13294,7 +13279,7 @@ var pokemon = [
       color: "White",
       eggGroups: ["Monster", "Dragon"],
     },
-    dhelmise: {
+    {
       num: 781,
       species: "Dhelmise",
       types: ["Ghost", "Grass"],
@@ -13306,7 +13291,7 @@ var pokemon = [
       color: "Green",
       eggGroups: ["Mineral"],
     },
-    jangmoo: {
+    {
       num: 782,
       species: "Jangmo-o",
       types: ["Dragon"],
@@ -13318,7 +13303,7 @@ var pokemon = [
       evos: ["hakamoo"],
       eggGroups: ["Dragon"],
     },
-    hakamoo: {
+    {
       num: 783,
       species: "Hakamo-o",
       types: ["Dragon", "Fighting"],
@@ -13332,7 +13317,7 @@ var pokemon = [
       evos: ["kommoo"],
       eggGroups: ["Dragon"],
     },
-    kommoo: {
+    {
       num: 784,
       species: "Kommo-o",
       types: ["Dragon", "Fighting"],
@@ -13346,7 +13331,7 @@ var pokemon = [
       eggGroups: ["Dragon"],
       otherFormes: ["kommoototem"],
     },
-    kommoototem: {
+    {
       num: 784,
       species: "Kommo-o-Totem",
       baseSpecies: "Kommo-o",
@@ -13359,7 +13344,7 @@ var pokemon = [
       color: "Gray",
       eggGroups: ["Dragon"],
     },
-    tapukoko: {
+    {
       num: 785,
       species: "Tapu Koko",
       types: ["Electric", "Fairy"],
@@ -13371,7 +13356,7 @@ var pokemon = [
       color: "Yellow",
       eggGroups: ["Undiscovered"],
     },
-    tapulele: {
+    {
       num: 786,
       species: "Tapu Lele",
       types: ["Psychic", "Fairy"],
@@ -13383,7 +13368,7 @@ var pokemon = [
       color: "Pink",
       eggGroups: ["Undiscovered"],
     },
-    tapubulu: {
+    {
       num: 787,
       species: "Tapu Bulu",
       types: ["Grass", "Fairy"],
@@ -13395,7 +13380,7 @@ var pokemon = [
       color: "Red",
       eggGroups: ["Undiscovered"],
     },
-    tapufini: {
+    {
       num: 788,
       species: "Tapu Fini",
       types: ["Water", "Fairy"],
@@ -13407,7 +13392,7 @@ var pokemon = [
       color: "Purple",
       eggGroups: ["Undiscovered"],
     },
-    cosmog: {
+    {
       num: 789,
       species: "Cosmog",
       types: ["Psychic"],
@@ -13420,7 +13405,7 @@ var pokemon = [
       evos: ["cosmoem"],
       eggGroups: ["Undiscovered"],
     },
-    cosmoem: {
+    {
       num: 790,
       species: "Cosmoem",
       types: ["Psychic"],
@@ -13435,7 +13420,7 @@ var pokemon = [
       evos: ["solgaleo", "lunala"],
       eggGroups: ["Undiscovered"],
     },
-    solgaleo: {
+    {
       num: 791,
       species: "Solgaleo",
       types: ["Psychic", "Steel"],
@@ -13449,7 +13434,7 @@ var pokemon = [
       evoLevel: 53,
       eggGroups: ["Undiscovered"],
     },
-    lunala: {
+    {
       num: 792,
       species: "Lunala",
       types: ["Psychic", "Ghost"],
@@ -13463,7 +13448,7 @@ var pokemon = [
       evoLevel: 53,
       eggGroups: ["Undiscovered"],
     },
-    nihilego: {
+    {
       num: 793,
       species: "Nihilego",
       types: ["Rock", "Poison"],
@@ -13475,7 +13460,7 @@ var pokemon = [
       color: "White",
       eggGroups: ["Undiscovered"],
     },
-    buzzwole: {
+    {
       num: 794,
       species: "Buzzwole",
       types: ["Bug", "Fighting"],
@@ -13487,7 +13472,7 @@ var pokemon = [
       color: "Red",
       eggGroups: ["Undiscovered"],
     },
-    pheromosa: {
+    {
       num: 795,
       species: "Pheromosa",
       types: ["Bug", "Fighting"],
@@ -13499,7 +13484,7 @@ var pokemon = [
       color: "White",
       eggGroups: ["Undiscovered"],
     },
-    xurkitree: {
+    {
       num: 796,
       species: "Xurkitree",
       types: ["Electric"],
@@ -13511,7 +13496,7 @@ var pokemon = [
       color: "Black",
       eggGroups: ["Undiscovered"],
     },
-    celesteela: {
+    {
       num: 797,
       species: "Celesteela",
       types: ["Steel", "Flying"],
@@ -13523,7 +13508,7 @@ var pokemon = [
       color: "Green",
       eggGroups: ["Undiscovered"],
     },
-    kartana: {
+    {
       num: 798,
       species: "Kartana",
       types: ["Grass", "Steel"],
@@ -13535,7 +13520,7 @@ var pokemon = [
       color: "White",
       eggGroups: ["Undiscovered"],
     },
-    guzzlord: {
+    {
       num: 799,
       species: "Guzzlord",
       types: ["Dark", "Dragon"],
@@ -13547,7 +13532,7 @@ var pokemon = [
       color: "Black",
       eggGroups: ["Undiscovered"],
     },
-    necrozma: {
+    {
       num: 800,
       species: "Necrozma",
       types: ["Psychic"],
@@ -13560,7 +13545,7 @@ var pokemon = [
       eggGroups: ["Undiscovered"],
       otherFormes: ["necrozmaduskmane", "necrozmadawnwings", "necrozmaultra"],
     },
-    necrozmaduskmane: {
+    {
       num: 800,
       species: "Necrozma-Dusk-Mane",
       baseSpecies: "Necrozma",
@@ -13575,7 +13560,7 @@ var pokemon = [
       eggGroups: ["Undiscovered"],
       inheritsFrom: "necrozma",
     },
-    necrozmadawnwings: {
+    {
       num: 800,
       species: "Necrozma-Dawn-Wings",
       baseSpecies: "Necrozma",
@@ -13590,7 +13575,7 @@ var pokemon = [
       eggGroups: ["Undiscovered"],
       inheritsFrom: "necrozma",
     },
-    necrozmaultra: {
+    {
       num: 800,
       species: "Necrozma-Ultra",
       baseSpecies: "Necrozma",
@@ -13605,7 +13590,7 @@ var pokemon = [
       eggGroups: ["Undiscovered"],
       inheritsFrom: "necrozma",
     },
-    magearna: {
+    {
       num: 801,
       species: "Magearna",
       types: ["Steel", "Fairy"],
@@ -13618,7 +13603,7 @@ var pokemon = [
       eggGroups: ["Undiscovered"],
       otherFormes: ["magearnaoriginal"],
     },
-    magearnaoriginal: {
+    {
       num: 801,
       species: "Magearna-Original",
       baseSpecies: "Magearna",
@@ -13633,7 +13618,7 @@ var pokemon = [
       eggGroups: ["Undiscovered"],
       inheritsFrom: "magearna",
     },
-    marshadow: {
+    {
       num: 802,
       species: "Marshadow",
       types: ["Fighting", "Ghost"],
@@ -13645,7 +13630,7 @@ var pokemon = [
       color: "Gray",
       eggGroups: ["Undiscovered"],
     },
-    poipole: {
+    {
       num: 803,
       species: "Poipole",
       types: ["Poison"],
@@ -13658,7 +13643,7 @@ var pokemon = [
       evos: ["naganadel"],
       eggGroups: ["Undiscovered"],
     },
-    naganadel: {
+    {
       num: 804,
       species: "Naganadel",
       types: ["Poison", "Dragon"],
@@ -13673,7 +13658,7 @@ var pokemon = [
       evoMove: "Dragon Pulse",
       eggGroups: ["Undiscovered"],
     },
-    stakataka: {
+    {
       num: 805,
       species: "Stakataka",
       types: ["Rock", "Steel"],
@@ -13685,7 +13670,7 @@ var pokemon = [
       color: "Gray",
       eggGroups: ["Undiscovered"],
     },
-    blacephalon: {
+    {
       num: 806,
       species: "Blacephalon",
       types: ["Fire", "Ghost"],
@@ -13697,7 +13682,7 @@ var pokemon = [
       color: "White",
       eggGroups: ["Undiscovered"],
     },
-    zeraora: {
+    {
       num: 807,
       species: "Zeraora",
       types: ["Electric"],
@@ -13709,7 +13694,7 @@ var pokemon = [
       color: "Yellow",
       eggGroups: ["Undiscovered"],
     },
-    meltan: {
+    {
       num: 808,
       species: "Meltan",
       types: ["Steel"],
@@ -13721,7 +13706,7 @@ var pokemon = [
       color: "Gray",
       eggGroups: ["Undiscovered"],
     },
-    melmetal: {
+    {
       num: 809,
       species: "Melmetal",
       types: ["Steel"],
@@ -13734,7 +13719,7 @@ var pokemon = [
       eggGroups: ["Undiscovered"],
       otherFormes: ["melmetalgmax"],
     },
-    melmetalgmax: {
+    {
       num: 809,
       species: "Melmetal-Gmax",
       baseSpecies: "Melmetal",
@@ -13750,7 +13735,7 @@ var pokemon = [
       eggGroups: ["Undiscovered"],
       inheritsFrom: "melmetal",
     },
-    grookey: {
+    {
       num: 810,
       species: "Grookey",
       types: ["Grass"],
@@ -13763,7 +13748,7 @@ var pokemon = [
       evos: ["thwackey"],
       eggGroups: ["Field", "Grass"],
     },
-    thwackey: {
+    {
       num: 811,
       species: "Thwackey",
       types: ["Grass"],
@@ -13778,7 +13763,7 @@ var pokemon = [
       evos: ["rillaboom"],
       eggGroups: ["Field", "Grass"],
     },
-    rillaboom: {
+    {
       num: 812,
       species: "Rillaboom",
       types: ["Grass"],
@@ -13792,7 +13777,7 @@ var pokemon = [
       evoLevel: 35,
       eggGroups: ["Field", "Grass"],
     },
-    scorbunny: {
+    {
       num: 813,
       species: "Scorbunny",
       types: ["Fire"],
@@ -13805,7 +13790,7 @@ var pokemon = [
       evos: ["raboot"],
       eggGroups: ["Field", "Human-Like"],
     },
-    raboot: {
+    {
       num: 814,
       species: "Raboot",
       types: ["Fire"],
@@ -13820,7 +13805,7 @@ var pokemon = [
       evos: ["cinderace"],
       eggGroups: ["Field", "Human-Like"],
     },
-    cinderace: {
+    {
       num: 815,
       species: "Cinderace",
       types: ["Fire"],
@@ -13834,7 +13819,7 @@ var pokemon = [
       prevo: "raboot",
       eggGroups: ["Field", "Human-Like"],
     },
-    sobble: {
+    {
       num: 816,
       species: "Sobble",
       types: ["Water"],
@@ -13847,7 +13832,7 @@ var pokemon = [
       evos: ["drizzile"],
       eggGroups: ["Water 1", "Field"],
     },
-    drizzile: {
+    {
       num: 817,
       species: "Drizzile",
       types: ["Water"],
@@ -13862,7 +13847,7 @@ var pokemon = [
       evos: ["inteleon"],
       eggGroups: ["Water 1", "Field"],
     },
-    inteleon: {
+    {
       num: 818,
       species: "Inteleon",
       types: ["Water"],
@@ -13876,7 +13861,7 @@ var pokemon = [
       evoLevel: 35,
       eggGroups: ["Water 1", "Field"],
     },
-    skwovet: {
+    {
       num: 819,
       species: "Skwovet",
       types: ["Normal"],
@@ -13888,7 +13873,7 @@ var pokemon = [
       evos: ["greedent"],
       eggGroups: ["Field"],
     },
-    greedent: {
+    {
       num: 820,
       species: "Greedent",
       types: ["Normal"],
@@ -13901,7 +13886,7 @@ var pokemon = [
       evoLevel: 24,
       eggGroups: ["Field"],
     },
-    rookidee: {
+    {
       num: 821,
       species: "Rookidee",
       types: ["Flying"],
@@ -13913,7 +13898,7 @@ var pokemon = [
       evos: ["corvisquire"],
       eggGroups: ["Flying"],
     },
-    corvisquire: {
+    {
       num: 822,
       species: "Corvisquire",
       types: ["Flying"],
@@ -13927,7 +13912,7 @@ var pokemon = [
       evos: ["corviknight"],
       eggGroups: ["Flying"],
     },
-    corviknight: {
+    {
       num: 823,
       species: "Corviknight",
       types: ["Flying", "Steel"],
@@ -13941,7 +13926,7 @@ var pokemon = [
       eggGroups: ["Flying"],
       otherFormes: ["corviknightgmax"],
     },
-    corviknightgmax: {
+    {
       num: 823,
       species: "Corviknight-Gmax",
       baseSpecies: "Corviknight",
@@ -13955,7 +13940,7 @@ var pokemon = [
       eggGroups: ["Flying"],
       inheritsFrom: "corviknight",
     },
-    blipbug: {
+    {
       num: 824,
       species: "Blipbug",
       types: ["Bug"],
@@ -13967,7 +13952,7 @@ var pokemon = [
       evos: ["dottler"],
       eggGroups: ["Bug"],
     },
-    dottler: {
+    {
       num: 825,
       species: "Dottler",
       types: ["Bug", "Psychic"],
@@ -13981,7 +13966,7 @@ var pokemon = [
       evos: ["orbeetle"],
       eggGroups: ["Bug"],
     },
-    orbeetle: {
+    {
       num: 826,
       species: "Orbeetle",
       types: ["Bug", "Psychic"],
@@ -13995,7 +13980,7 @@ var pokemon = [
       eggGroups: ["Bug"],
       otherFormes: ["orbeetlegmax"],
     },
-    orbeetlegmax: {
+    {
       num: 826,
       species: "Orbeetle-Gmax",
       baseSpecies: "Orbeetle",
@@ -14010,7 +13995,7 @@ var pokemon = [
       eggGroups: ["Bug"],
       inheritsFrom: "orbeetle",
     },
-    nickit: {
+    {
       num: 827,
       species: "Nickit",
       types: ["Dark"],
@@ -14022,7 +14007,7 @@ var pokemon = [
       evos: ["thievul"],
       eggGroups: ["Field"],
     },
-    thievul: {
+    {
       num: 828,
       species: "Thievul",
       types: ["Dark"],
@@ -14035,7 +14020,7 @@ var pokemon = [
       evoLevel: 18,
       eggGroups: ["Field"],
     },
-    gossifleur: {
+    {
       num: 829,
       species: "Gossifleur",
       types: ["Grass"],
@@ -14047,7 +14032,7 @@ var pokemon = [
       evos: ["eldegoss"],
       eggGroups: ["Grass"],
     },
-    eldegoss: {
+    {
       num: 830,
       species: "Eldegoss",
       types: ["Grass"],
@@ -14060,7 +14045,7 @@ var pokemon = [
       evoLevel: 20,
       eggGroups: ["Grass"],
     },
-    wooloo: {
+    {
       num: 831,
       species: "Wooloo",
       types: ["Normal"],
@@ -14072,7 +14057,7 @@ var pokemon = [
       evos: ["dubwool"],
       eggGroups: ["Field"],
     },
-    dubwool: {
+    {
       num: 832,
       species: "Dubwool",
       types: ["Normal"],
@@ -14085,7 +14070,7 @@ var pokemon = [
       evoLevel: 24,
       eggGroups: ["Field"],
     },
-    chewtle: {
+    {
       num: 833,
       species: "Chewtle",
       types: ["Water"],
@@ -14097,7 +14082,7 @@ var pokemon = [
       evos: ["drednaw"],
       eggGroups: ["Monster", "Water 1"],
     },
-    drednaw: {
+    {
       num: 834,
       species: "Drednaw",
       types: ["Water", "Rock"],
@@ -14111,7 +14096,7 @@ var pokemon = [
       eggGroups: ["Monster", "Water 1"],
       otherFormes: ["drednawgmax"],
     },
-    drednawgmax: {
+    {
       num: 834,
       species: "Drednaw-Gmax",
       baseSpecies: "Drednaw",
@@ -14125,7 +14110,7 @@ var pokemon = [
       eggGroups: ["Monster", "Water 1"],
       inheritsFrom: "drednaw",
     },
-    yamper: {
+    {
       num: 835,
       species: "Yamper",
       types: ["Electric"],
@@ -14137,7 +14122,7 @@ var pokemon = [
       evos: ["boltund"],
       eggGroups: ["Field"],
     },
-    boltund: {
+    {
       num: 836,
       species: "Boltund",
       types: ["Electric"],
@@ -14150,7 +14135,7 @@ var pokemon = [
       evoLevel: 25,
       eggGroups: ["Field"],
     },
-    rolycoly: {
+    {
       num: 837,
       species: "Rolycoly",
       types: ["Rock"],
@@ -14162,7 +14147,7 @@ var pokemon = [
       evos: ["carkol"],
       eggGroups: ["Mineral"],
     },
-    carkol: {
+    {
       num: 838,
       species: "Carkol",
       types: ["Rock", "Fire"],
@@ -14176,7 +14161,7 @@ var pokemon = [
       evos: ["coalossal"],
       eggGroups: ["Mineral"],
     },
-    coalossal: {
+    {
       num: 839,
       species: "Coalossal",
       types: ["Rock", "Fire"],
@@ -14190,7 +14175,7 @@ var pokemon = [
       eggGroups: ["Mineral"],
       otherFormes: ["coalossalgmax"],
     },
-    coalossalgmax: {
+    {
       num: 839,
       species: "Coalossal-Gmax",
       baseSpecies: "Coalossal",
@@ -14205,7 +14190,7 @@ var pokemon = [
       eggGroups: ["Mineral"],
       inheritsFrom: "coalossal",
     },
-    applin: {
+    {
       num: 840,
       species: "Applin",
       types: ["Grass", "Dragon"],
@@ -14217,7 +14202,7 @@ var pokemon = [
       evos: ["flapple", "appletun"],
       eggGroups: ["Grass", "Dragon"],
     },
-    flapple: {
+    {
       num: 841,
       species: "Flapple",
       types: ["Grass", "Dragon"],
@@ -14232,7 +14217,7 @@ var pokemon = [
       eggGroups: ["Grass", "Dragon"],
       otherFormes: ["flapplegmax"],
     },
-    flapplegmax: {
+    {
       num: 841,
       species: "Flapple-Gmax",
       baseSpecies: "Flapple",
@@ -14247,7 +14232,7 @@ var pokemon = [
       eggGroups: ["Grass", "Dragon"],
       inheritsFrom: "flapple",
     },
-    appletun: {
+    {
       num: 842,
       species: "Appletun",
       types: ["Grass", "Dragon"],
@@ -14262,7 +14247,7 @@ var pokemon = [
       eggGroups: ["Grass", "Dragon"],
       otherFormes: ["appletungmax"],
     },
-    appletungmax: {
+    {
       num: 842,
       species: "Appletun-Gmax",
       baseSpecies: "Appletun",
@@ -14277,7 +14262,7 @@ var pokemon = [
       eggGroups: ["Grass", "Dragon"],
       inheritsFrom: "appletun",
     },
-    silicobra: {
+    {
       num: 843,
       species: "Silicobra",
       types: ["Ground"],
@@ -14289,7 +14274,7 @@ var pokemon = [
       evos: ["sandaconda"],
       eggGroups: ["Field", "Dragon"],
     },
-    sandaconda: {
+    {
       num: 844,
       species: "Sandaconda",
       types: ["Ground"],
@@ -14303,7 +14288,7 @@ var pokemon = [
       eggGroups: ["Field", "Dragon"],
       otherFormes: ["sandacondagmax"],
     },
-    sandacondagmax: {
+    {
       num: 844,
       species: "Sandaconda-Gmax",
       baseSpecies: "Sandaconda",
@@ -14318,7 +14303,7 @@ var pokemon = [
       eggGroups: ["Field", "Dragon"],
       inheritsFrom: "sandaconda",
     },
-    cramorant: {
+    {
       num: 845,
       species: "Cramorant",
       types: ["Flying", "Water"],
@@ -14330,7 +14315,7 @@ var pokemon = [
       eggGroups: ["Water 1", "Flying"],
       otherFormes: ["cramorantgulping", "cramorantgorging"],
     },
-    cramorantgulping: {
+    {
       num: 845,
       species: "Cramorant-Gulping",
       baseSpecies: "Cramorant",
@@ -14343,7 +14328,7 @@ var pokemon = [
       color: "Blue",
       eggGroups: ["Water 1", "Flying"],
     },
-    cramorantgorging: {
+    {
       num: 845,
       species: "Cramorant-Gorging",
       baseSpecies: "Cramorant",
@@ -14356,7 +14341,7 @@ var pokemon = [
       color: "Blue",
       eggGroups: ["Water 1", "Flying"],
     },
-    arrokuda: {
+    {
       num: 846,
       species: "Arrokuda",
       types: ["Water"],
@@ -14368,7 +14353,7 @@ var pokemon = [
       evos: ["barraskewda"],
       eggGroups: ["Water 2"],
     },
-    barraskewda: {
+    {
       num: 847,
       species: "Barraskewda",
       types: ["Water"],
@@ -14381,7 +14366,7 @@ var pokemon = [
       evoLevel: 26,
       eggGroups: ["Water 2"],
     },
-    toxel: {
+    {
       num: 848,
       species: "Toxel",
       types: ["Electric", "Poison"],
@@ -14393,7 +14378,7 @@ var pokemon = [
       evos: ["toxtricity", "toxtricitylowkey"],
       eggGroups: ["Undiscovered"],
     },
-    toxtricity: {
+    {
       num: 849,
       species: "Toxtricity",
       baseForme: "Amped",
@@ -14408,7 +14393,7 @@ var pokemon = [
       eggGroups: ["Human-Like"],
       otherFormes: ["toxtricitylowkey", "toxtricitygmax"],
     },
-    toxtricitylowkey: {
+    {
       num: 849,
       species: "Toxtricity-Low-Key",
       baseSpecies: "Toxtricity",
@@ -14424,7 +14409,7 @@ var pokemon = [
       eggGroups: ["Human-Like"],
       otherFormes: ["toxtricitylowkeygmax"],
     },
-    toxtricitygmax: {
+    {
       num: 849,
       species: "Toxtricity-Gmax",
       baseSpecies: "Toxtricity",
@@ -14438,7 +14423,7 @@ var pokemon = [
       eggGroups: ["Human-Like"],
       inheritsFrom: "toxtricity",
     },
-    toxtricitylowkeygmax: {
+    {
       num: 849,
       species: "Toxtricity-Low-Key-Gmax",
       baseSpecies: "Toxtricity-Low-Key",
@@ -14452,7 +14437,7 @@ var pokemon = [
       eggGroups: ["Human-Like"],
       inheritsFrom: "toxtricitylowkey",
     },
-    sizzlipede: {
+    {
       num: 850,
       species: "Sizzlipede",
       types: ["Fire", "Bug"],
@@ -14464,7 +14449,7 @@ var pokemon = [
       evos: ["centiskorch"],
       eggGroups: ["Bug"],
     },
-    centiskorch: {
+    {
       num: 851,
       species: "Centiskorch",
       types: ["Fire", "Bug"],
@@ -14478,7 +14463,7 @@ var pokemon = [
       eggGroups: ["Bug"],
       otherFormes: ["centiskorchgmax"],
     },
-    centiskorchgmax: {
+    {
       num: 851,
       species: "Centiskorch-Gmax",
       baseSpecies: "Centiskorch",
@@ -14493,7 +14478,7 @@ var pokemon = [
       eggGroups: ["Bug"],
       inheritsFrom: "centiskorch",
     },
-    clobbopus: {
+    {
       num: 852,
       species: "Clobbopus",
       types: ["Fighting"],
@@ -14505,7 +14490,7 @@ var pokemon = [
       evos: ["grapploct"],
       eggGroups: ["Water 1", "Human-Like"],
     },
-    grapploct: {
+    {
       num: 853,
       species: "Grapploct",
       types: ["Fighting"],
@@ -14519,7 +14504,7 @@ var pokemon = [
       evoMove: "Taunt",
       eggGroups: ["Water 1", "Human-Like"],
     },
-    sinistea: {
+    {
       num: 854,
       species: "Sinistea",
       types: ["Ghost"],
@@ -14533,7 +14518,7 @@ var pokemon = [
       eggGroups: ["Mineral", "Amorphous"],
       otherForms: ["sinisteachipped"],
     },
-    polteageist: {
+    {
       num: 855,
       species: "Polteageist",
       types: ["Ghost"],
@@ -14549,7 +14534,7 @@ var pokemon = [
       eggGroups: ["Mineral", "Amorphous"],
       otherForms: ["polteageistchipped"],
     },
-    hatenna: {
+    {
       num: 856,
       species: "Hatenna",
       types: ["Psychic"],
@@ -14562,7 +14547,7 @@ var pokemon = [
       evos: ["hattrem"],
       eggGroups: ["Fairy"],
     },
-    hattrem: {
+    {
       num: 857,
       species: "Hattrem",
       types: ["Psychic"],
@@ -14577,7 +14562,7 @@ var pokemon = [
       evos: ["hatterene"],
       eggGroups: ["Fairy"],
     },
-    hatterene: {
+    {
       num: 858,
       species: "Hatterene",
       types: ["Psychic", "Fairy"],
@@ -14592,7 +14577,7 @@ var pokemon = [
       eggGroups: ["Fairy"],
       otherFormes: ["hatterenegmax"],
     },
-    hatterenegmax: {
+    {
       num: 858,
       species: "Hatterene-Gmax",
       baseSpecies: "Hatterene",
@@ -14608,7 +14593,7 @@ var pokemon = [
       eggGroups: ["Fairy"],
       inheritsFrom: "hatterene",
     },
-    impidimp: {
+    {
       num: 859,
       species: "Impidimp",
       types: ["Dark", "Fairy"],
@@ -14621,7 +14606,7 @@ var pokemon = [
       evos: ["morgrem"],
       eggGroups: ["Fairy", "Human-Like"],
     },
-    morgrem: {
+    {
       num: 860,
       species: "Morgrem",
       types: ["Dark", "Fairy"],
@@ -14636,7 +14621,7 @@ var pokemon = [
       evos: ["grimmsnarl"],
       eggGroups: ["Fairy", "Human-Like"],
     },
-    grimmsnarl: {
+    {
       num: 861,
       species: "Grimmsnarl",
       types: ["Dark", "Fairy"],
@@ -14651,7 +14636,7 @@ var pokemon = [
       eggGroups: ["Fairy", "Human-Like"],
       otherFormes: ["grimmsnarlgmax"],
     },
-    grimmsnarlgmax: {
+    {
       num: 861,
       species: "Grimmsnarl-Gmax",
       baseSpecies: "Grimmsnarl",
@@ -14667,7 +14652,7 @@ var pokemon = [
       eggGroups: ["Fairy", "Human-Like"],
       inheritsFrom: "grimmsnarl",
     },
-    obstagoon: {
+    {
       num: 862,
       species: "Obstagoon",
       types: ["Dark", "Normal"],
@@ -14681,7 +14666,7 @@ var pokemon = [
       evoCondition: "at night",
       eggGroups: ["Field"],
     },
-    perrserker: {
+    {
       num: 863,
       species: "Perrserker",
       types: ["Steel"],
@@ -14694,7 +14679,7 @@ var pokemon = [
       evoLevel: 28,
       eggGroups: ["Field"],
     },
-    cursola: {
+    {
       num: 864,
       species: "Cursola",
       types: ["Ghost"],
@@ -14708,7 +14693,7 @@ var pokemon = [
       evoLevel: 38,
       eggGroups: ["Water 1", "Water 3"],
     },
-    sirfetchd: {
+    {
       num: 865,
       species: "Sirfetch'd",
       types: ["Fighting"],
@@ -14722,7 +14707,7 @@ var pokemon = [
       evoCondition: "Land 3 critical hits in 1 battle",
       eggGroups: ["Flying", "Field"],
     },
-    mrrime: {
+    {
       num: 866,
       species: "Mr. Rime",
       types: ["Ice", "Psychic"],
@@ -14735,7 +14720,7 @@ var pokemon = [
       evoLevel: 42,
       eggGroups: ["Human-Like"],
     },
-    runerigus: {
+    {
       num: 867,
       species: "Runerigus",
       types: ["Ground", "Ghost"],
@@ -14749,7 +14734,7 @@ var pokemon = [
       evoCondition: "Have 49+ HP lost and walk under stone sculpture in Dusty Bowl",
       eggGroups: ["Mineral", "Amorphous"],
     },
-    milcery: {
+    {
       num: 868,
       species: "Milcery",
       types: ["Fairy"],
@@ -14762,7 +14747,7 @@ var pokemon = [
       evos: ["alcremie"],
       eggGroups: ["Fairy", "Amorphous"],
     },
-    alcremie: {
+    {
       num: 869,
       species: "Alcremie",
       baseForme: "Vanilla Cream",
@@ -14780,7 +14765,7 @@ var pokemon = [
       otherFormes: ["alcremiegmax"],
       otherForms: ["alcremierubycream", "alcremiematchacream", "alcremiemintcream", "alcremielemoncream", "alcremiesaltedcream", "alcremierubyswirl", "alcremiecaramelswirl", "alcremierainbowswirl"],
     },
-    alcremiegmax: {
+    {
       num: 869,
       species: "Alcremie-Gmax",
       baseSpecies: "Alcremie",
@@ -14795,7 +14780,7 @@ var pokemon = [
       eggGroups: ["Fairy", "Amorphous"],
       inheritsFrom: "alcremie",
     },
-    falinks: {
+    {
       num: 870,
       species: "Falinks",
       types: ["Fighting"],
@@ -14807,7 +14792,7 @@ var pokemon = [
       color: "Yellow",
       eggGroups: ["Fairy", "Mineral"],
     },
-    pincurchin: {
+    {
       num: 871,
       species: "Pincurchin",
       types: ["Electric"],
@@ -14818,7 +14803,7 @@ var pokemon = [
       color: "Purple",
       eggGroups: ["Water 1", "Amorphous"],
     },
-    snom: {
+    {
       num: 872,
       species: "Snom",
       types: ["Ice", "Bug"],
@@ -14830,7 +14815,7 @@ var pokemon = [
       evos: ["frosmoth"],
       eggGroups: ["Bug"],
     },
-    frosmoth: {
+    {
       num: 873,
       species: "Frosmoth",
       types: ["Ice", "Bug"],
@@ -14844,7 +14829,7 @@ var pokemon = [
       evoCondition: "at night",
       eggGroups: ["Bug"],
     },
-    stonjourner: {
+    {
       num: 874,
       species: "Stonjourner",
       types: ["Rock"],
@@ -14855,7 +14840,7 @@ var pokemon = [
       color: "Gray",
       eggGroups: ["Mineral"],
     },
-    eiscue: {
+    {
       num: 875,
       species: "Eiscue",
       types: ["Ice"],
@@ -14867,7 +14852,7 @@ var pokemon = [
       eggGroups: ["Water 1", "Field"],
       otherFormes: ["eiscuenoice"],
     },
-    eiscuenoice: {
+    {
       num: 875,
       species: "Eiscue-Noice",
       baseSpecies: "Eiscue",
@@ -14880,7 +14865,7 @@ var pokemon = [
       color: "Blue",
       eggGroups: ["Water 1", "Field"],
     },
-    indeedee: {
+    {
       num: 876,
       species: "Indeedee",
       baseForme: "M",
@@ -14894,7 +14879,7 @@ var pokemon = [
       eggGroups: ["Fairy"],
       otherFormes: ["indeedeef"],
     },
-    indeedeef: {
+    {
       num: 876,
       species: "Indeedee-F",
       baseSpecies: "Indeedee",
@@ -14908,7 +14893,7 @@ var pokemon = [
       color: "Purple",
       eggGroups: ["Fairy"],
     },
-    morpeko: {
+    {
       num: 877,
       species: "Morpeko",
       types: ["Electric", "Dark"],
@@ -14920,7 +14905,7 @@ var pokemon = [
       eggGroups: ["Field", "Fairy"],
       otherFormes: ["morpekohangry"],
     },
-    morpekohangry: {
+    {
       num: 877,
       species: "Morpeko-Hangry",
       baseSpecies: "Morpeko",
@@ -14933,7 +14918,7 @@ var pokemon = [
       color: "Yellow",
       eggGroups: ["Field", "Fairy"],
     },
-    cufant: {
+    {
       num: 878,
       species: "Cufant",
       types: ["Steel"],
@@ -14945,7 +14930,7 @@ var pokemon = [
       evos: ["copperajah"],
       eggGroups: ["Field", "Mineral"],
     },
-    copperajah: {
+    {
       num: 879,
       species: "Copperajah",
       types: ["Steel"],
@@ -14959,7 +14944,7 @@ var pokemon = [
       eggGroups: ["Field", "Mineral"],
       otherFormes: ["copperajahgmax"],
     },
-    copperajahgmax: {
+    {
       num: 879,
       species: "Copperajah-Gmax",
       baseSpecies: "Copperajah",
@@ -14974,7 +14959,7 @@ var pokemon = [
       eggGroups: ["Field", "Mineral"],
       inheritsFrom: "copperajah",
     },
-    dracozolt: {
+    {
       num: 880,
       species: "Dracozolt",
       types: ["Electric", "Dragon"],
@@ -14986,7 +14971,7 @@ var pokemon = [
       color: "Green",
       eggGroups: ["Undiscovered"],
     },
-    arctozolt: {
+    {
       num: 881,
       species: "Arctozolt",
       types: ["Electric", "Ice"],
@@ -14998,7 +14983,7 @@ var pokemon = [
       color: "Blue",
       eggGroups: ["Undiscovered"],
     },
-    dracovish: {
+    {
       num: 882,
       species: "Dracovish",
       types: ["Water", "Dragon"],
@@ -15010,7 +14995,7 @@ var pokemon = [
       color: "Green",
       eggGroups: ["Undiscovered"],
     },
-    arctovish: {
+    {
       num: 883,
       species: "Arctovish",
       types: ["Water", "Ice"],
@@ -15022,7 +15007,7 @@ var pokemon = [
       color: "Blue",
       eggGroups: ["Undiscovered"],
     },
-    duraludon: {
+    {
       num: 884,
       species: "Duraludon",
       types: ["Steel", "Dragon"],
@@ -15034,7 +15019,7 @@ var pokemon = [
       eggGroups: ["Mineral", "Dragon"],
       otherFormes: ["duraludongmax"],
     },
-    duraludongmax: {
+    {
       num: 884,
       species: "Duraludon-Gmax",
       baseSpecies: "Duraludon",
