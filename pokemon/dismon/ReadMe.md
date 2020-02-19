@@ -6,7 +6,19 @@ Please try to go off the official [Pokemon Website's Pokedex](https://www.pokemo
 Once you've submitted an update to the file we will review it and if approved it will be added.
 
 ## What is here?
-Here we have the Pokedex Database and soon other databases for every command for Dismon.
+The databases here are our,
+
+Pokedex Database
+
+Move Database
+
+Type Database
+
+Abilities Database
+
+Item Database
+
+and more
 
 ## Why are you allowing Community Contributions?
 The database is hard to update with just a few people so we've opened it up to everyone.
