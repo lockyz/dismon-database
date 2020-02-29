@@ -1,2 +1,6 @@
-# Lockyz-Group-Database
-If you can see this then you're accessing data you're not supposed to have access to.
+# Lockyz Group Database
+The Lockyz Group Database contains assets for all the web Applications created by anything under the "Lockyz Group"
+
+You can find links to various pages below.
+# Links
+*Nothing is available yet*
