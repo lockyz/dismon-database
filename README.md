@@ -3,6 +3,17 @@
 ![GitHub issues](https://img.shields.io/github/issues/lockyz/Dismon?logo=GitHub&style=for-the-badge)
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/lockyz/Dismon?logo=GitHub&style=for-the-badge)
 
+# Important Information
+The Pokedex Database is officially DEPRECATED.
+
+The Move Database is officially DEPRECATED.
+
+The Abilities Database is officially DEPRECATED.
+
+The Item Database is officially DEPRECATED.
+
+The Type Database is basically finished meaning it won't need to be updated unless Game Freak add more Types.
+
 # Dismon Database
 You can use this folder to help us update the Database for [Dismon](https://github.com/lockyz/Dismon)
 
